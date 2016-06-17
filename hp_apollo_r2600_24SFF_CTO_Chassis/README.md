@@ -1,0 +1,3 @@
+- network interface configuration of "HP ProLiant XL170r Gen9 CTO Svr" servers of "HP Apollo r2600 24SFF CTO Chassis".
+- network card configuration of "HP ProLiant XL170r Gen9 CTO Svr" servers of "HP Apollo r2600 24SFF CTO Chassis".
+- /etc/network/interfaces configuration of "HP ProLiant XL170r Gen9 CTO Svr" servers of "HP Apollo r2600 24SFF CTO Chassis".

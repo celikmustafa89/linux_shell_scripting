@@ -1,3 +1,6 @@
+
+# To configure the Apollo server network card, run the following commands.
+
 $ ifconfig p1p2 up
 $ ethtool p1p2
 # - "Link detected" should be "yes"

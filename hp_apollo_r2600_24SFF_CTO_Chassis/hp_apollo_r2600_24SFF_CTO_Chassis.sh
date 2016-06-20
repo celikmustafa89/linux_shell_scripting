@@ -1,10 +1,10 @@
-# ifconfig p1p2 up
-# ethtool p1p2
-- "Link detected" should be "yes"
+$ ifconfig p1p2 up
+$ ethtool p1p2
+# - "Link detected" should be "yes"
 
-# ifconfig p1p2 down
+$ ifconfig p1p2 down
 
-# vim /etc/network/interfaces
+$ vim /etc/network/interfaces
 ---
 auto p1p2
 iface p1p2 inet static
@@ -14,6 +14,6 @@ iface p1p2 inet static
 	dns-nameservers	XX.X.XX.X (in my case: 10.1.34.4)
 --
 
-# ifup p1p2
-# ifconfig
-- check p1p2 is running
+$ ifup p1p2
+$ ifconfig
+# - check p1p2 is running

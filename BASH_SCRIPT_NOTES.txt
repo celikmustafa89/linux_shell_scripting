@@ -1,0 +1,53 @@
+# ===================================================================================
+
+    Why to Write Shell Script ?
+
+    1. Shell script can take input from user, file and output them on screen.
+    2. Useful to create our own commands.
+    3. Save lots of time.
+    4. To automate some task of day today life.
+    5. System Administration part can be also automated.
+
+# ===================================================================================
+
+    There are a few other variables that the system sets for you to use as well.
+
+    $0        - The name of the Bash script. [ex: echo $SHELL or echo $0]
+    $1 - $9   - The first 9 arguments to the Bash script. (As mentioned above.)
+    $#        - How many arguments were passed to the Bash script.
+    $@        - All the arguments supplied to the Bash script.
+    $?        - The exit status of the most recently run process.
+    $$        - The process ID of the current script.
+    $USER     - The username of the user running the script.
+    $HOSTNAME - The hostname of the machine the script is running on.
+    $SECONDS  - The number of seconds since the script was started.
+    $RANDOM   - Returns a different random number each time is it referred to.
+    $LINENO   - Returns the current line number in the Bash script.
+
+# ===================================================================================
+
+    How to write shell script?
+
+    Following steps are required to write shell script:
+
+    1. Use any editor like vi or mcedit to write shell script.
+    2. After writing shell script set execute permission for your script as follows
+        syntax:
+            chmod permission your-script-name
+
+        Examples:
+            $ chmod +x your-script-name
+            $ chmod 755 your-script-name
+
+        Note: This will set read write execute(7) permission for owner, for group and
+              other permission is read and execute only(5).
+    3. Execute your script as
+        syntax:
+            bash your-script-name
+            sh your-script-name
+            ./your-script-name
+
+        Examples:
+            $ bash bar
+            $ sh bar
+            $ ./bar

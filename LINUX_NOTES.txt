@@ -1,0 +1,20 @@
+Changing Ubuntu hostname
+------------------------
+1. Type the following command to edit /etc/hostname using nano or vi text editor:
+   $ sudo vim /etc/hostname
+   Delete the old name and setup new name.
+2. Next Edit the /etc/hosts file:
+   $ sudo vim /etc/hosts
+   Replace any occurrence of the existing computer name with your new one.
+3. Reboot the system to changes take effect:
+   $ sudo reboot
+
+
+PermitPasswordAuthentication Using Password without KeyPair
+-----------------------------------------------------------
+1. change the following line:
+   $ vim /etc/ssh/sshd_config
+
+   PasswordAuthentication yes
+2. restart ssh:
+   $ /etc/init.d/ssh restart

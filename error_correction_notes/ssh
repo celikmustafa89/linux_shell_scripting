@@ -1,0 +1,19 @@
+ERROR-1:
+
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Permissions 0644 for 'XXXX.pem' are too open.
+    It is required that your private key files are NOT accessible by others.
+    This private key will be ignored.
+    bad permissions: ignore key: XXXX.pem
+    Permission denied (publickey).
+
+SOLUTION:
+
+    Keys need to be only readable by you:
+    $ chmod 400 XXXX.pem
+
+    related link for soluiton:
+        http://stackoverflow.com/questions/9270734/ssh-permissions-are-too-open-error
+

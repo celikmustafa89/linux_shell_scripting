@@ -1,0 +1,2185 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Shell Scripting by celikmustafa89</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Shell Scripting</h1>
+        <p class="header"></p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/celikmustafa89/linux_shell_scripting/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/celikmustafa89/linux_shell_scripting/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/celikmustafa89/linux_shell_scripting">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/celikmustafa89">celikmustafa89</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a id="shell-scripting" class="anchor" href="#shell-scripting" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SHELL SCRIPTING</h1>
+
+<ol>
+<li> Shell Scripting Tutorial-1  : <strong>Introduction</strong><br>
+</li>
+<li> Shell Scripting Tutorial-2  : <strong>Shell, Kernel, Terminal &amp; More</strong><br>
+</li>
+<li> Shell Scripting Tutorial-3  : <strong>View System Date, Calender</strong><br>
+</li>
+<li> Shell Scripting Tutorial-4  : <strong>Create Files &amp; Directories</strong><br>
+</li>
+<li> Shell Scripting Tutorial-5  : <strong>Text Files: Create, Merge &amp; Play</strong><br>
+</li>
+<li> Shell Scripting Tutorial-6  : <strong>Rename &amp; Delete Files &amp; Directories</strong><br>
+</li>
+<li> Shell Scripting Tutorial-7  : <strong>Create Copies, Links to Files &amp; Directories</strong><br>
+</li>
+<li> Shell Scripting Tutorial-8  : <strong>File Permissions</strong><br>
+</li>
+<li> Shell Scripting Tutorial-9  : <strong>See What's In Using '<em>ls</em>'</strong><br>
+</li>
+<li>Shell Scripting Tutorial-10: <strong>Change File Permissions Using '<em>chmod</em>'</strong><br>
+</li>
+<li>Shell Scripting Tutorial-11: <strong>Count Lines, Words &amp; Characters Using '<em>wc</em>'</strong><br>
+</li>
+<li>Shell Scripting Tutorial-12: <strong>Sort</strong><br>
+</li>
+<li>Shell Scripting Tutorial-13: <strong>Cut Through Your Files</strong><br>
+</li>
+<li>Shell Scripting Tutorial-14: <strong>Convert &amp; Copy Files With '<em>dd</em>'</strong><br>
+</li>
+<li>Shell Scripting Tutorial-15: <strong>Get Help, View Fancy Text &amp; Reduce File Size</strong><br>
+</li>
+<li>Shell Scripting Tutorial-16: <strong>Hello World!</strong><br>
+</li>
+<li>Shell Scripting Tutorial-17: <strong>Use Commands In Your Scripts</strong><br>
+</li>
+<li>Shell Scripting Tutorial-18: <strong>Shell Variables, Grab User Input Using 'read'</strong><br>
+</li>
+<li>Shell Scripting Tutorial-19: <strong>Positional Parameters</strong><br>
+</li>
+<li>Shell Scripting Tutorial-20: <strong>More On Positional Parameters</strong><br>
+</li>
+<li>Shell Scripting Tutorial-21: <strong>Reverse Quotes Or Accent Graves</strong><br>
+</li>
+<li>Shell Scripting Tutorial-22: <strong>Count The Number of Command Line Arguments Using $</strong><br>
+</li>
+<li>Shell Scripting Tutorial-23: <strong>Math On Integers Using 'expr'</strong><br>
+</li>
+<li>Shell Scripting Tutorial-24: <strong>Operator Precedence</strong><br>
+</li>
+<li>Shell Scripting Tutorial-25: <strong>Math On Real Numbers</strong><br>
+</li>
+<li>Shell Scripting Tutorial-26: <strong>Escape Sequences</strong><br>
+</li>
+<li>Shell Scripting Tutorial-27: <strong>Do Cool Things With 'tput'</strong><br>
+</li>
+<li>Shell Scripting Tutorial-28: <strong>'if-then' Statement in Action</strong><br>
+</li>
+<li>Shell Scripting Tutorial-29: <strong>The 'if-then-else' Statement</strong><br>
+</li>
+<li>Shell Scripting Tutorial-30: <strong>Run Checks on Numbers</strong><br>
+</li>
+<li>Shell Scripting Tutorial-31: <strong>Run Checks On Files</strong><br>
+</li>
+<li>Shell Scripting Tutorial-32: <strong>Append Text to a File Through Shell Script</strong><br>
+</li>
+<li>Shell Scripting Tutorial-33: <strong>Run Checks On Strings</strong><br>
+</li>
+<li>Shell Scripting Tutorial-34: <strong>The 'AND' Logical Operator</strong><br>
+</li>
+<li>Shell Scripting Tutorial-35: <strong>Count The Number of Characters in User's Input in Your Script</strong><br>
+</li>
+<li>Shell Scripting Tutorial-36: <strong>The 'OR' Logical Operator</strong><br>
+</li>
+<li>Shell Scripting Tutorial-37: <strong>The 'case' Statement</strong><br>
+</li>
+<li>Shell Scripting Tutorial-38: <strong>Another Date With 'case' Statement</strong><br>
+</li>
+<li>Shell Scripting Tutorial-39: <strong>The 'while' Loop</strong><br>
+</li>
+<li>Shell Scripting Tutorial-40: <strong>The 'until' Loop</strong><br>
+</li>
+<li>Shell Scripting Tutorial-41: <strong>The 'for' Loop</strong><br>
+</li>
+<li>Shell Scripting Tutorial-42: <strong>Rant &amp; Little Work</strong><br>
+</li>
+<li>Shell Scripting Tutorial-43: <strong>Search Patterns Using 'grep'</strong><br>
+</li>
+<li>Shell Scripting Tutorial-44: <strong>The 'passwd' File Explained</strong><br>
+</li>
+<li>Shell Scripting Tutorial-45: <strong>The Internal Field Separator</strong><br>
+</li>
+<li>Shell Scripting Tutorial-46: <strong>'passwd' File Revisited</strong><br>
+</li>
+<li>Shell Scripting Tutorial-47: <strong>Reading From a File</strong><br>
+</li>
+<li>Shell Scripting Tutorial-48: <strong>Sleep while you are at work</strong><br>
+</li>
+<li>Shell Scripting Tutorial-49: <strong>Count the number of words &amp; sentences in a text file without using 'wc'</strong><br>
+</li>
+<li>Shell Scripting Tutorial-50: <strong>Fetch &amp; Redirect Man Pages of commands using 'for loop'</strong><br>
+</li>
+<li>Shell Scripting Tutorial-51: <strong>Nested Loops</strong><br>
+</li>
+<li>Shell Scripting Tutorial-52: <strong>The 'break' Statement</strong><br>
+</li>
+<li>Shell Scripting Tutorial-53: <strong>The 'continue' Statement</strong><br>
+</li>
+<li>Shell Scripting Tutorial-54: <strong>More on Metacharacters</strong><br>
+</li>
+<li>Shell Scripting Tutorial-55: <strong>Adding &amp; Removing Users</strong><br>
+</li>
+<li>Shell Scripting Tutorial-56: <strong>Know when users log in Part One</strong><br>
+</li>
+<li>Shell Scripting Tutorial-57: <strong>Know when users log in Part Two</strong><br>
+</li>
+<li>Shell Scripting Tutorial-58: <strong>Know when users log in Final Part</strong><br>
+</li>
+<li>Shell Scripting Tutorial-59: <strong>Communicate with other users using 'write'</strong><br>
+</li>
+<li>Shell Scripting Tutorial-60: <strong>Create Your Own Commands Using Functions</strong><br>
+</li>
+<li>Shell Scripting Tutorial-61: <strong>Executing Multiple Scripts</strong><br>
+</li>
+</ol>
+
+<h2>
+<a id="shell-scripting-tutorial-1-introduction" class="anchor" href="#shell-scripting-tutorial-1-introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-1:</strong> <em>Introduction</em>
+</h2>
+
+<ul>
+<li>Install a linux distribution.</li>
+</ul>
+
+<h2>
+<a id="shell-scripting-tutorial-2-shell-kernel-terminal-and-more" class="anchor" href="#shell-scripting-tutorial-2-shell-kernel-terminal-and-more" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-2:</strong> <em>Shell, Kernel, Terminal and More</em>
+</h2>
+
+<p><strong>Shell</strong> is an interface between user and the UNIX Kernel.<br>
+<strong>UNIX Kernel</strong> manages the resources and hardware.<br>
+<strong>Terminal</strong> provides access to shell.  </p>
+
+<p>&lt;username&gt;@&lt;machinename&gt;:~$ terminal commands must be lowercase.  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>who am i</code></td>
+<td>shows user name, terminal number, date</td>
+</tr>
+<tr>
+<td><code>whoami</code></td>
+<td>shows only user name</td>
+</tr>
+<tr>
+<td><code>pwd</code></td>
+<td>prints the working directory</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-3-view-system-date-calender" class="anchor" href="#shell-scripting-tutorial-3-view-system-date-calender" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-3:</strong> <em>View System Date, Calender</em>
+</h2>
+
+<h3>
+<a id="calender" class="anchor" href="#calender" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Calender</h3>
+
+<p>calender commands:  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cal</code></td>
+<td>prints the calender</td>
+</tr>
+<tr>
+<td><code>cal 7 2006</code></td>
+<td>prints july 2006</td>
+</tr>
+<tr>
+<td><code>cal feb 2033</code></td>
+<td>prints february 2033</td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="date" class="anchor" href="#date" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Date</h3>
+
+<p><strong>date</strong> command prints date as <em><strong>Mon Aug  8 14:37:04 EEST 2016</strong></em>.  </p>
+
+<p>Output of date command can be customized.<br>
+$ date '+DATE: %m-%y%nTIME: %H:%M:%S'<br>
+date commands:  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>date</code></td>
+<td>prints date as "Mon Aug  8 14:37:04 EEST 2016"</td>
+</tr>
+<tr>
+<td><code>date '+DATE: %m-%y%nTIME: %H:%M:%S'</code></td>
+<td>prints date as "DATE: 08-16 TIME: 14:40:33"</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-4-create-files--directories" class="anchor" href="#shell-scripting-tutorial-4-create-files--directories" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-4:</strong> <em>Create Files &amp; Directories</em>
+</h2>
+
+<p><strong>touch</strong> is used to create empty files.<br>
+<strong>mkdir</strong> is used to create empty folder.<br>
+<strong>cd</strong> is used to navigate inside folders.  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>touch empty_file1 empty_file2</code></td>
+<td>creates two empty files</td>
+</tr>
+<tr>
+<td><code>mkdir folder1</code></td>
+<td>creates a folder in working directory</td>
+</tr>
+<tr>
+<td><code>mkdir Documents/folder1</code></td>
+<td>creates a folder in Documents directory</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-5-text-files-create-merge--play" class="anchor" href="#shell-scripting-tutorial-5-text-files-create-merge--play" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-5:</strong> <em>Text Files: Create, Merge &amp; Play</em>
+</h2>
+
+<p><strong>cat</strong> creates file with text.<br>
+<code>$ cat &gt; test_file</code><br>
+<code>test_file content bla bla..</code>  </p>
+
+<p><strong>cat</strong> shows content of the file.<br>
+<code>$ cat test_file</code><br>
+<code>$ cat &lt; test_file</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cat &gt; test_file</code></td>
+<td>creates file with text</td>
+</tr>
+<tr>
+<td><code>cat &lt; test_file</code></td>
+<td>prints the content</td>
+</tr>
+<tr>
+<td><code>cat test_file</code></td>
+<td>prints the content</td>
+</tr>
+<tr>
+<td><code>cat &gt; test_file2</code></td>
+<td>creates file with text</td>
+</tr>
+<tr>
+<td><code>cat test_file test_file2 &gt; merged_test_files</code></td>
+<td>merge two files</td>
+</tr>
+<tr>
+<td><code>cat &lt; merged_test_files</code></td>
+<td>shows both test files' content</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-6-rename--delete-files--directories" class="anchor" href="#shell-scripting-tutorial-6-rename--delete-files--directories" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-6:</strong> <em>Rename &amp; Delete Files &amp; Directories</em>
+</h2>
+
+<h3>
+<a id="rename-files--directories" class="anchor" href="#rename-files--directories" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Rename Files &amp; Directories</h3>
+
+<p><strong>mv</strong> renames files and directories<br>
+<code>mv file1 file2</code>  </p>
+
+<h3>
+<a id="delete-files--directories" class="anchor" href="#delete-files--directories" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Delete Files &amp; Directories</h3>
+
+<p><strong>rm</strong> deletes file<br>
+<code>rm file</code>  </p>
+
+<p><strong>rm -r</strong> deletes directory<br>
+<code>rm -r directory/</code>  </p>
+
+<p><strong>rmdir</strong> deletes empty directory<br>
+<code>rmdir empty_directory</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mv file1 file2</code></td>
+<td>renames the file</td>
+</tr>
+<tr>
+<td><code>mv directory1 directory2</code></td>
+<td>renames the directory</td>
+</tr>
+<tr>
+<td><code>rm file2</code></td>
+<td>deletes the file</td>
+</tr>
+<tr>
+<td><code>rm -r directory2</code></td>
+<td>deletes the directory</td>
+</tr>
+<tr>
+<td><code>rmdir empty_directory</code></td>
+<td>deletes the empty directory</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-7-create-copies-links-to-files--directories" class="anchor" href="#shell-scripting-tutorial-7-create-copies-links-to-files--directories" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-7:</strong> <em>Create Copies, Links to Files &amp; Directories</em>
+</h2>
+
+<h3>
+<a id="copy-files" class="anchor" href="#copy-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Copy Files</h3>
+
+<p><strong>cp</strong> is used to copy files from one location to other.<br>
+<strong>cp</strong> copies the file <strong>mv</strong> cuts and pastes the file.<br>
+<code>cp file /home/Music/file_new_name</code>  </p>
+
+<h3>
+<a id="links" class="anchor" href="#links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Links</h3>
+
+<p><strong>ln</strong> creates hard link for a file.<br>
+<strong>Hard link</strong> is replica of original one.<br>
+Any changes from old file, also exists in new one.<br>
+Removing the original one does not effect new one.<br>
+<code>ln old_file new_file</code>  </p>
+
+<p><strong>ln -s</strong> creates soft link.<br>
+Any changes from old file, also exists in new one.<br>
+Removing the original makes soft link useless.<br>
+<code>ln -s old old_soft</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cp old_file /home/Music/new_file</code></td>
+<td>copy files to new location with new name</td>
+</tr>
+<tr>
+<td><code>ln file hard_file</code></td>
+<td>creates a hard link</td>
+</tr>
+<tr>
+<td><code>ln -s file soft_file</code></td>
+<td>creates a soft link</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-8-file-permissions" class="anchor" href="#shell-scripting-tutorial-8-file-permissions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-8:</strong> <em>File Permissions</em>
+</h2>
+
+<h3>
+<a id="file-permission" class="anchor" href="#file-permission" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>File Permission</h3>
+
+<p><strong>owner</strong>, <strong>group</strong> and <strong>other</strong> are 3 permission part.  </p>
+
+<p><strong>read</strong>, <strong>write</strong> and <strong>execute</strong> are 3 type of permission.  </p>
+
+<ul>
+<li>
+<strong>read</strong>: has numeric value "<strong>4</strong>".<br>
+</li>
+<li>
+<strong>write</strong>: has numeric value "<strong>2</strong>".<br>
+</li>
+<li>
+<strong>execute</strong>: has numeric value "<strong>1</strong>".<br>
+</li>
+</ul>
+
+<h3>
+<a id="umask-usage" class="anchor" href="#umask-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>"umask" Usage</h3>
+
+<p><strong>umask</strong> is used to specify permission values.<br>
+Assume <strong>umask</strong> value is <strong><em>0022</em></strong>.<br>
+<code>file permission = 666 - 022 = 644</code> which means owner(read, write=6), group(read=4), other(read=4)<br>
+<code>directory permission = 777 - 022 = 755</code> which means owner(read, write, execute=7), group/other(read, execute=5)  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>umask</code></td>
+<td>shows file and directory permission creation base number</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-9-see-whats-using-in-ls" class="anchor" href="#shell-scripting-tutorial-9-see-whats-using-in-ls" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-9:</strong> <em>See What's Using in 'ls'</em>
+</h2>
+
+<h3>
+<a id="usage-of-ls" class="anchor" href="#usage-of-ls" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage of 'ls'</h3>
+
+<p><strong>ls</strong> shows the list of files and directories.<br>
+<code>ls -l</code> shows the following<br>
+<code>total 4</code><br>
+<code>-rw-r--r-- 2 joker joker    0 Aug  9 13:58 forrest_village</code><br>
+<code>-rw-r--r-- 2 joker joker    0 Aug  9 13:58 new</code><br>
+<code>-rw-r--r-- 1 joker joker    0 Aug  9 15:10 sample</code><br>
+<code>drwxr-xr-x 2 joker joker 4096 Aug  9 14:05 sdf</code>    </p>
+
+<p><strong>"d"</strong> letter at the beginnig of the last line shows that it is a <strong>directory</strong>.<br>
+Any <strong>"l"</strong> letter at the beginning of the line shows that it is a <strong>soft link</strong>.  </p>
+
+<p>Next characters shows the permissions owner(read,write,execute)group(read,write,execute)other(read,write,execute)  </p>
+
+<h3>
+<a id="hidden-files-and-ls--a" class="anchor" href="#hidden-files-and-ls--a" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hidden files and 'ls -a'</h3>
+
+<p>Hidden files are created using . at the beginning of the file name.<br>
+<code>touch .test</code>  </p>
+
+<p><code>ls -a</code> shows all files in the directory, inclued hidden files.  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ls</code></td>
+<td>lists files and directories</td>
+</tr>
+<tr>
+<td><code>ls -l</code></td>
+<td>lists files and directories with permissions</td>
+</tr>
+<tr>
+<td><code>touch .test</code></td>
+<td>creates a hidden file</td>
+</tr>
+<tr>
+<td><code>ls -a</code></td>
+<td>list all files and directories including hidden ones</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-10-change-file-permissions-using-chmod" class="anchor" href="#shell-scripting-tutorial-10-change-file-permissions-using-chmod" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-10:</strong> <em>Change File Permissions Using 'chmod'</em>
+</h2>
+
+<h3>
+<a id="usage-of-chmod" class="anchor" href="#usage-of-chmod" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage of 'chmod'</h3>
+
+<p><code>**chmod**</code> changes file permissions.<br>
+<code>chmod 777 test</code> gives read, write and execute permissions to owner,group and other  </p>
+
+<h3>
+<a id="usage-of-uname" class="anchor" href="#usage-of-uname" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage of 'uname'</h3>
+
+<p><code>**uname**</code> shows all about machine.<br>
+<code>$ uname -a</code> 
+output:<br>
+<code>**Linux joker 3.16.0-38-generic #52~14.04.1-Ubuntu SMP Fri May 8 09:43:57 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux**</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>chmod 777 test</code></td>
+<td>gives all permissions to all users</td>
+</tr>
+<tr>
+<td><code>uname -a</code></td>
+<td>shows all details about machine and kernel</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-11-count-lines-words--characters-using-wc" class="anchor" href="#shell-scripting-tutorial-11-count-lines-words--characters-using-wc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-11:</strong> <em>Count Lines, Words &amp; Characters Using 'wc'</em>
+</h2>
+
+<h3>
+<a id="usage-of-file" class="anchor" href="#usage-of-file" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage of 'file'</h3>
+
+<p><strong><code>file</code></strong> shows the type of files.<br>
+<code>file *</code><br>
+output:<br>
+<code>aaa:             symbolic link to 'new'</code><br>
+<code>bbb:             empty</code><br>
+<code>forrest_village: empty</code><br>
+<code>jazz:            ASCII text</code><br>
+<code>new:             empty</code><br>
+<code>sdf:             directory</code>  </p>
+
+<h3>
+<a id="usage-of-wc" class="anchor" href="#usage-of-wc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage of 'wc'</h3>
+
+<p><code>**wc file**</code><br>
+output:<br>
+<code>4  7 48 file</code><br>
+4 : number of lines<br>
+7 : number of words<br>
+48: number of characters  </p>
+
+<p><code>wc -l file</code> show line count<br>
+<code>wc -w file</code> show word count<br>
+<code>wc -c file</code> show character count  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>file *</code></td>
+<td>shows file types of all files</td>
+</tr>
+<tr>
+<td><code>wc file</code></td>
+<td>shows number of lines, words and chracters of file</td>
+</tr>
+<tr>
+<td><code>wc -l file</code></td>
+<td>shows number of lines</td>
+</tr>
+<tr>
+<td><code>wc -w file</code></td>
+<td>shows number of words</td>
+</tr>
+<tr>
+<td><code>wc -c file</code></td>
+<td>shows number of chracters</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-12-sort" class="anchor" href="#shell-scripting-tutorial-12-sort" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-12:</strong> <em>Sort</em>
+</h2>
+
+<h3>
+<a id="usage-of-sort" class="anchor" href="#usage-of-sort" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage of 'sort'</h3>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sort animals</code></td>
+<td>sorts alphabetically the lines of file</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-13-cut-through-your-files" class="anchor" href="#shell-scripting-tutorial-13-cut-through-your-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-13:</strong> <em>Cut Through Your Files</em>
+</h2>
+
+<h3>
+<a id="usage-of-cut" class="anchor" href="#usage-of-cut" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage of 'cut'</h3>
+
+<p><strong><code>cut</code></strong> uses - as default saperater.<br>
+<code>cut -d"-" -f 1,3 file_name</code>  </p>
+
+<p><strong><em>-d</em></strong>: specify the delimeter character<br>
+<strong><em>-f</em></strong>: specify the fields that will be printed  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cut -d"-" 1,3 file_name</code></td>
+<td>prints the 1 and 3 column of the file, and - is delimeter</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-14-convert--copy-files-with-dd" class="anchor" href="#shell-scripting-tutorial-14-convert--copy-files-with-dd" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-14:</strong> <em>Convert &amp; Copy Files with 'dd'</em>
+</h2>
+
+<h3>
+<a id="usage-of-dd" class="anchor" href="#usage-of-dd" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage of 'dd'</h3>
+
+<p>converts all characters from lowercase to uppercase in a file.<br>
+<code>dd if=test of=test1 conv=ucase</code>  </p>
+
+<p>converts encoding to european based encoding.<br>
+<code>dd if=test of=test2 conv=ebcdic</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dd if=test of=test1 conv=ucase</code></td>
+<td>converts all lowercase to uppercase in a new file</td>
+</tr>
+<tr>
+<td><code>dd if=test of=test2 conv=ebcdic</code></td>
+<td>converts encoding to european based encoding</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-15-get-help-view-fancy-text--reduce-file-size" class="anchor" href="#shell-scripting-tutorial-15-get-help-view-fancy-text--reduce-file-size" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-15:</strong> <em>Get Help, View Fancy Text &amp; Reduce File Size</em>
+</h2>
+
+<h3>
+<a id="getting-help" class="anchor" href="#getting-help" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Help</h3>
+
+<p><code>man &lt;command name&gt;</code> shows the help manual of the command.<br>
+<code>man cat</code>  </p>
+
+<p>exiting manual page by using Q key.  </p>
+
+<h3>
+<a id="view-fancy-text" class="anchor" href="#view-fancy-text" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>View Fancy Text</h3>
+
+<p><code>banner my name is mustafa celik</code><br>
+<code>banner "my name is mustafa celik"</code> banner shows 10 character in one line.    </p>
+
+<h3>
+<a id="reduce-file-size" class="anchor" href="#reduce-file-size" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Reduce File Size</h3>
+
+<p>reducing the size of a file.<br>
+<code>compress -v test</code>  </p>
+
+<p>printing compressed file in a readable format.<br>
+<code>zcat -v test.Z</code>  </p>
+
+<p>uncompressing the compressed file.<br>
+<code>uncompress test.Z</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>man &lt;command&gt;</code></td>
+<td>shows the manuel of the command. Note: use Q key to quit.</td>
+</tr>
+<tr>
+<td><code>banner some text</code></td>
+<td>prints fancy text</td>
+</tr>
+<tr>
+<td><code>banner "some text"</code></td>
+<td>prints fancy text in one line. Note: limited to 10 character.</td>
+</tr>
+<tr>
+<td><code>compress -v test</code></td>
+<td>compresses the test file.</td>
+</tr>
+<tr>
+<td><code>zcat -v test.Z</code></td>
+<td>prints the readable version of the compressed file.</td>
+</tr>
+<tr>
+<td><code>uncompress test.Z</code></td>
+<td>uncompress the compressed file.</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-16-hello-world" class="anchor" href="#shell-scripting-tutorial-16-hello-world" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-16:</strong> <em>Hello World!</em>
+</h2>
+
+<p>hello world example is implemented using <code>echo</code> command.  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>echo "Hello World!"</code></td>
+<td>prints hello world to terminal.</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-17-use-command-in-your-script" class="anchor" href="#shell-scripting-tutorial-17-use-command-in-your-script" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-17:</strong> <em>Use Command in Your Script</em>
+</h2>
+
+<p>Use commands in the script.<br>
+<code>pwd</code><br>
+<code>ls -l</code><br>
+<code>banner "The End"</code>  </p>
+
+<h2>
+<a id="shell-scripting-tutorial-18-shell-variables-grab-user-input-using-read" class="anchor" href="#shell-scripting-tutorial-18-shell-variables-grab-user-input-using-read" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-18:</strong> <em>Shell Variables, Grab User Input Using 'read'</em>
+</h2>
+
+<h3>
+<a id="shell-variables" class="anchor" href="#shell-variables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Shell Variables</h3>
+
+<p>Shell scripting has some rules for variables.  </p>
+
+<ul>
+<li>variable names starts with an <strong>alphabet</strong> or <strong>underscore</strong> symbol.<br>
+</li>
+<li>variables are case sensitive. <code>my_var</code> and <code>MY_VAR</code> are different variables.<br>
+</li>
+</ul>
+
+<h3>
+<a id="grab-user-input-using-read" class="anchor" href="#grab-user-input-using-read" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Grab User Input Using 'read'</h3>
+
+<p><strong>read</strong> is used to get user input from terminal.<br>
+<code>echo "Enter your name: "</code><br>
+<code>read name</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>read name</code></td>
+<td>reads input from user and assign it to name variable</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-19-positional-parameters" class="anchor" href="#shell-scripting-tutorial-19-positional-parameters" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-19:</strong> <em>Positional Parameters</em>
+</h2>
+
+<p>Renaming a file using one positional parameter.  </p>
+
+<h2>
+<a id="shell-scripting-tutorial-20-more-on-positional-parameters" class="anchor" href="#shell-scripting-tutorial-20-more-on-positional-parameters" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-20:</strong> <em>More on Positional Parameters</em>
+</h2>
+
+<p>setting positional parameters from the content of a file.<br>
+<code>set cat test</code> this usage is wrong which assigns $1:cat and $2:test<br>
+<code>echo $*</code><br>
+"set `cat test`"  this assigns file content as parameters<br>
+<code>cat test</code><br>
+<code>echo $*</code>  </p>
+
+<p>özetle<br>
+reverse quotes: ters tirnak isareti<br>
+accent grave: tirnak arasinda komut calistirilan kisim  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>set <code>cat test</code>
+</td>
+<td>assigns content of test file to positional parameters</td>
+</tr>
+<tr>
+<td>set <code>who am i</code>
+</td>
+<td>assigns output of the command to positional parameters</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-21-reverse-quotes--accent-graves" class="anchor" href="#shell-scripting-tutorial-21-reverse-quotes--accent-graves" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-21:</strong> <em>Reverse Quotes &amp; Accent Graves</em>
+</h2>
+
+<p><code>set shell scripting is cool</code><br>
+<code>echo $1</code><br>
+<code>echo $2</code><br>
+<code>echo $3</code><br>
+<code>echo $4</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>set word1 word2 word3</code></td>
+<td>assigns $1: word1 $2: word2 and $3: word3</td>
+</tr>
+<tr>
+<td><code>echo $*</code></td>
+<td>prints all positional parameters</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-22-count-the-number-of-command-line-arguments-using-" class="anchor" href="#shell-scripting-tutorial-22-count-the-number-of-command-line-arguments-using-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-22:</strong> <em>Count the Number of Command Line Arguments Using '$#'</em>
+</h2>
+
+<p>Finding number of positional parameters that comes from <strong>command line</strong> and <strong><code>set</code></strong> command.<br>
+<code>set this is video tutorial about shell scripting</code><br>
+<code>echo $#</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>echo $#</code></td>
+<td>prints the number of parameter.</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-23-math-on-integers-using-expr" class="anchor" href="#shell-scripting-tutorial-23-math-on-integers-using-expr" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-23:</strong> <em>Math on Integers Using 'expr'</em>
+</h2>
+
+<p>arithmetic operations on shell script.<br>
+"a=30 b=15"<br>
+"echo <code>expr $a + $b</code>"<br>
+"echo <code>expr $a - $b</code>"<br>
+"echo <code>expr $a \* $b</code>"<br>
+"echo <code>expr $a / $b</code>"<br>
+"echo <code>expr $a % $b</code>"  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>echo <code>expr $a + $b</code>
+</td>
+<td>addition</td>
+</tr>
+<tr>
+<td>echo <code>expr $a - $b</code>
+</td>
+<td>substraction</td>
+</tr>
+<tr>
+<td>echo <code>expr $a \* $b</code>
+</td>
+<td>multiplication</td>
+</tr>
+<tr>
+<td>echo <code>expr $a / $b</code>
+</td>
+<td>division</td>
+</tr>
+<tr>
+<td>echo <code>expr $a % $b</code>
+</td>
+<td>modular division</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-24-operator-precedence" class="anchor" href="#shell-scripting-tutorial-24-operator-precedence" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-24:</strong> <em>Operator Precedence</em>
+</h2>
+
+<p>/, *, % operations have first priority.<br>
++, - operations have second priority.  </p>
+
+<p>echo <code>expr $a \* \( $b + $c \) / $d</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>echo <code>expr $a \* \( $b + $c \) / $d</code>
+</td>
+<td>operation precedence using \</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-25-math-on-real-numbers" class="anchor" href="#shell-scripting-tutorial-25-math-on-real-numbers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-25:</strong> <em>Math on Real Numbers</em>
+</h2>
+
+<p><strong>bc</strong> usage is explained in this tutorial.<br>
+<code>echo $a + $b | bc</code><br>
+<code>echo $a - $b | bc</code><br>
+<code>echo $a \* $b | bc</code><br>
+<code>echo $a / $b | bc</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>echo $a + $b | bc</code></td>
+<td>bs is used for floating point operations with pipe(</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-26-escape-sequences" class="anchor" href="#shell-scripting-tutorial-26-escape-sequences" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-26:</strong> <em>Escape Sequences</em>
+</h2>
+
+<p>customizing(text color, border etc.) the <strong>echo</strong> outputs.  </p>
+
+<ul>
+<li>new line: <strong>\n</strong> -&gt; <code>echo "hello \nworld"</code><br>
+</li>
+<li>return: <strong>\r</strong> -&gt; <code>echo "hello \rworld"</code> basa donerek üzerine yazar.<br>
+</li>
+<li>tab: <strong>\t</strong> -&gt; <code>echo "hello \tworld"</code><br>
+</li>
+<li>backspace:  <strong>\b</strong> -&gt; <code>echo "Hey World, \b\b\b\b\b\b\bwhat's up?"</code> bir onceki karakterin uzerine yaziyor.<br>
+</li>
+<li>bold: <strong>\033[1m</strong> <strong>\033[0m</strong> -&gt; <code>echo "\033[1mHey World, what's up?\033[0m"</code> writes the text in bold format<br>
+</li>
+<li>black background: <strong>\033[7m</strong> <strong>\033[0m</strong> -&gt; <code>echo "\033[7mHey World, what's up?\033[0m"</code> prints black background<br>
+</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>echo "hello \nworld"</code></td>
+<td>new line</td>
+</tr>
+<tr>
+<td><code>echo "hello \rworld"</code></td>
+<td>return character writes from the beginning over the previous print</td>
+</tr>
+<tr>
+<td><code>echo "hello \tworld"</code></td>
+<td>tab character</td>
+</tr>
+<tr>
+<td><code>echo "Hey World, \b\b\b\b\b\b\bwhat's up?"</code></td>
+<td>backspace comes 1 character back</td>
+</tr>
+<tr>
+<td><code>echo "\033[1mHey World, what's up?\033[0m"</code></td>
+<td>bold character</td>
+</tr>
+<tr>
+<td><code>echo "\033[7mHey World, what's up?\033[0m"</code></td>
+<td>black background</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-27-do-cool-things-with-tput" class="anchor" href="#shell-scripting-tutorial-27-do-cool-things-with-tput" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-27:</strong> <em>Do Cool Things with 'tput'</em>
+</h2>
+
+<p>clearing terminal.<br>
+<code>tput clear</code><br>
+determining the number of rows and  columns of the terminal.<br>
+<code>tput lines</code> shows number of rows.<br>
+<code>tput cols</code> shows number of columns.<br>
+printing character in bold.<br>
+<code>tput bold</code><br>
+positioning the cursor to a specific row and column.<br>
+<code>tput cup 15 20</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tput clear</code></td>
+<td>clear the terminal</td>
+</tr>
+<tr>
+<td><code>tput lines</code></td>
+<td>Total number of rows on screen</td>
+</tr>
+<tr>
+<td><code>tput cols</code></td>
+<td>Total number of columns on screen</td>
+</tr>
+<tr>
+<td><code>tput cup 15 20</code></td>
+<td>position cursor to new row and column</td>
+</tr>
+<tr>
+<td><code>tput bold</code></td>
+<td>print in bold format</td>
+</tr>
+<tr>
+<td><code>echo "\033[0mbye bye"</code></td>
+<td>ends printing in bold</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-28-if-then-statement-in-action" class="anchor" href="#shell-scripting-tutorial-28-if-then-statement-in-action" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-28:</strong> <em>'if-then' Statement in Action</em>
+</h2>
+
+<p>terminalde her komut calistiktan sonra, komutun basarili olup olmadigini gosteren bir sayi doner.<br>
+bu ciktiyi gormek icin su komut kullanilir:
+<code>mkdir new</code><br>
+<code>echo $?</code>  </p>
+
+<p>renaming a file using if statement.<br>
+<code>if mv source.txt target.txt</code><br>
+<code>then</code><br>
+<code>echo "Your file has been succesfully renamed."</code><br>
+<code>fi</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>usage of if-then statement</td>
+</tr>
+<tr>
+<td><code>if something_true</code></td>
+</tr>
+<tr>
+<td><code>then</code></td>
+</tr>
+<tr>
+<td><code>echo "condition is correct"</code></td>
+</tr>
+<tr>
+<td><code>fi</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-29-the-if-then-else-statement" class="anchor" href="#shell-scripting-tutorial-29-the-if-then-else-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-29:</strong> <em>The 'if-then-else' Statement</em>
+</h2>
+
+<p>renaming a file using if statement.<br>
+<code>if mv source.txt target.txt</code><br>
+<code>then</code><br>
+<code>echo "Your file has been successfully renamed."</code><br>
+<code>else</code>
+<code>echo "file has NOT been  renamed."</code>
+<code>fi</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>usage of if-then statement</td>
+</tr>
+<tr>
+<td><code>if something_true_or_false</code></td>
+</tr>
+<tr>
+<td><code>then</code></td>
+</tr>
+<tr>
+<td><code>echo "condition is true"</code></td>
+</tr>
+<tr>
+<td><code>else</code></td>
+</tr>
+<tr>
+<td><code>echo "condition is false"</code></td>
+</tr>
+<tr>
+<td><code>fi</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-30-run-checks-on-numbers" class="anchor" href="#shell-scripting-tutorial-30-run-checks-on-numbers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-30:</strong> <em>Run Checks on Numbers</em>
+</h2>
+
+<p>if checks statements are following:<br>
+<code>num=3</code><br>
+<code>if [ $num -eq 10]</code><br>
+<code>then</code><br>
+    <code>echo "it is equal to 10"</code><br>
+<code>elif [ $num -lt 10 ]</code><br>
+<code>then</code><br>
+    <code>echo "less than 10"</code><br>
+<code>elif [ $num -gt 10 ]</code><br>
+<code>then</code><br>
+    <code>echo "greater than 10"</code><br>
+<code>elif [ $num -le 10 ]</code><br>
+<code>then</code><br>
+    <code>echo "less than and equal to 10"</code><br>
+<code>elif [ $num -ge 10 ]</code><br>
+<code>then</code><br>
+    <code>echo "greater than and equal to 10"</code><br>
+<code>elif [ $num -ne 10 ]</code><br>
+<code>then</code>
+    <code>echo "not equal"</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-eq</code></td>
+<td>equal</td>
+</tr>
+<tr>
+<td><code>-lt</code></td>
+<td>less than</td>
+</tr>
+<tr>
+<td><code>-gt</code></td>
+<td>greater than</td>
+</tr>
+<tr>
+<td><code>-le</code></td>
+<td>less than and equal</td>
+</tr>
+<tr>
+<td><code>-ge</code></td>
+<td>greater than and equal</td>
+</tr>
+<tr>
+<td><code>-ne</code></td>
+<td>not equal</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-31-run-checks-on-files" class="anchor" href="#shell-scripting-tutorial-31-run-checks-on-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-31:</strong> <em>Run Checks on Files</em>
+</h2>
+
+<p><strong>character space file</strong>: text files<br>
+<strong>block space file</strong>: video and image files which can not be displayed by text editor<br>
+<strong>directory space file</strong>: folders are also a file  </p>
+
+<p><code>if [ -f $fname ]</code> checks is it file or not.  </p>
+
+<p><strong>-f</strong>: checks for file<br>
+<strong>-d</strong>: checks for directory<br>
+<strong>-c</strong>: checks for character space file(text file)<br>
+<strong>-b</strong>: checks for block space file(image, video)<br>
+<strong>-r</strong>: checks read permission<br>
+<strong>-w</strong>: checks write permission<br>
+<strong>-x</strong>: checks execute permission<br>
+<strong>-s</strong>: checks if the file size is greater 0 or not  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>if [ -f $fname ]</code></td>
+<td>checks file or not</td>
+</tr>
+<tr>
+<td><code>if [ -d $fname ]</code></td>
+<td>checks directory or not</td>
+</tr>
+<tr>
+<td><code>if [ -c $fname ]</code></td>
+<td>checks character space file or not</td>
+</tr>
+<tr>
+<td><code>if [ -b $fname ]</code></td>
+<td>checks block space file or not</td>
+</tr>
+<tr>
+<td><code>if [ -r $fname ]</code></td>
+<td>checks has read permission or not</td>
+</tr>
+<tr>
+<td><code>if [ -w $fname ]</code></td>
+<td>checks has write permission or not</td>
+</tr>
+<tr>
+<td><code>if [ -x $fname ]</code></td>
+<td>checks has execute permission or not</td>
+</tr>
+<tr>
+<td><code>if [ -s $fname ]</code></td>
+<td>checks size is greater than 0 or not</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-32-append-text-to-a-file-through-shell-script" class="anchor" href="#shell-scripting-tutorial-32-append-text-to-a-file-through-shell-script" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-32:</strong> <em>Append Text to a File Through Shell Script</em>
+</h2>
+
+<p>usage of the if else statement and file checks command.<br>
+example code:
+<code>echo "Enter file name:\c"</code><br>
+<code>read fname</code><br>
+<code>if [ -f $fname ]</code><br>
+<code>then</code><br>
+<code>if [ -w $fname ]</code><br>
+<code>then</code><br>
+<code>echo "Type matter to append. To quit press ctrl+d."</code><br>
+<code>cat &gt;&gt; $fname</code><br>
+<code>else</code><br>
+<code>echo "You do not have permission to write."</code><br>
+<code>fi</code><br>
+<code>fi</code>  </p>
+
+<h2>
+<a id="shell-scripting-tutorial-33-run-checks-on-strings" class="anchor" href="#shell-scripting-tutorial-33-run-checks-on-strings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-33:</strong> <em>Run Checks on Strings</em>
+</h2>
+
+<p>string checks:  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[ "$str1" = "$str2" ]</code></td>
+<td>checks if string are equal</td>
+</tr>
+<tr>
+<td><code>[ "$str1" != "$str2" ]</code></td>
+<td>checks if string are not equal</td>
+</tr>
+<tr>
+<td><code>[ -n "$str1"</code></td>
+<td>checks if string length is greater than zero</td>
+</tr>
+<tr>
+<td><code>[ -z "$str1" ]</code></td>
+<td>checks if string length is zero</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-34-run-checks-on-stringthe-and-logical-operator" class="anchor" href="#shell-scripting-tutorial-34-run-checks-on-stringthe-and-logical-operator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-34:</strong> <em>Run Checks on StringThe 'AND' Logical Operator</em>
+</h2>
+
+<p><strong>-a</strong> is the 'AND' operator for shell scripting.<br>
+Following if statement checks the variable if it is between 50 and 100.<br>
+<code>if [ $num -le 100 -a $num -ge 50 ]</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>if [ $num -le 100 -a $num -ge 50 ]</code></td>
+<td>usage of AND operator</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-35-count-the-number-of-characters-in-users-input-in-your-script" class="anchor" href="#shell-scripting-tutorial-35-count-the-number-of-characters-in-users-input-in-your-script" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-35:</strong> <em>Count the Number of Characters in User's Input in Your Script</em>
+</h2>
+
+<p>checking the number of the character of the variable.<br>
+<code>if [ 'echo $var | wc -c' -eq 2 ]</code></p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>if [ 'echo $var | wc -c' -eq 2 ]</code></td>
+<td>check if there is one character or not. 2 because of enter character.</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-36-the-or-logical-operator" class="anchor" href="#shell-scripting-tutorial-36-the-or-logical-operator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-36:</strong> <em>The 'OR' Logical Operator</em>
+</h2>
+
+<p><strong>-0</strong> is the 'OR' operator for shell scripting.<br>
+Following if statement checks the variable if it is vowel or not.<br>
+<code>if [ $var  = a -o $var  = e -o $var  = i -o $var  = u -o $var  = o ]</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>if [ $var  = a -o $var  = e -o $var  = i -o $var  = u -o $var  = o ]</code></td>
+<td>usage of OR operator</td>
+</tr>
+</tbody>
+</table>
+
+<p>##<strong>Shell Scripting Tutorial-37:</strong> <em>The 'case' Statement</em> ##</p>
+
+<p>The case statement is the fourth version of the condition statements.<br>
+1. if
+2. if else
+3. elif
+4. case</p>
+
+<p>usage of case statement:<br>
+<code>echo "Enter a character:\c"</code><br>
+<code>read var</code>  </p>
+
+<p><code>case $var in</code><br>
+<code>[a-z])</code><br>
+<code>echo "You entered a lowercase character."</code><br>
+<code>;;</code><br>
+<code>[A-Z])</code><br>
+<code>echo "You entered an uppercase character."</code><br>
+<code>;;</code><br>
+<code>[0-9])</code><br>
+<code>echo "You entered a digit."</code><br>
+<code>;;</code><br>
+<code>?)</code><br>
+<code>echo "You entered a special character."</code><br>
+<code>;;</code><br>
+<code>*)</code><br>
+<code>echo "You entered more than one character."</code><br>
+<code>;;</code><br>
+<code>esac</code>  </p>
+
+<h2>
+<a id="shell-scripting-tutorial-38-another-date-with-case-statement" class="anchor" href="#shell-scripting-tutorial-38-another-date-with-case-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-38:</strong> <em>Another Date with 'case' Statement</em>
+</h2>
+
+<p>Another example of case statement.  </p>
+
+<p><code>echo "Enter a word:\c"</code><br>
+<code>read word</code><br>
+<code>
+`case $word in`  
+`[aeiou]* | [AEIOU]*)`  
+`    echo "The words begins with a vowel."`  
+`    ;;`  
+`[0-9]*)`  
+`    echo "The words begins with a digit."`  
+`    ;;`  
+`*[0-9])`  
+`    echo "The words ends with a digit."`  
+`    ;;`  
+`???)`  
+`    echo "The words is a 3-letter word."`  
+`    ;;`  
+`*)`  
+`    echo "Something else."`  
+</code>    ;;<code>
+esac</code>  </p>
+
+<h2>
+<a id="shell-scripting-tutorial-39-the-while-loop" class="anchor" href="#shell-scripting-tutorial-39-the-while-loop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-39:</strong> <em>The 'while' Loop</em>
+</h2>
+
+<p>usage of 'while' loop.<br>
+display the number 1 to 10.  </p>
+
+<p><code>count=1</code><br>
+<code>while [ $count -le 10 ]</code><br>
+<code>do</code><br>
+<code>echo $count</code><br>
+    count=<code>expr $count + 1</code><br>
+<code>done</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>while [ $count -le 10 ]</code></td>
+<td>usage of while loop</td>
+</tr>
+<tr>
+<td><code>do</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>echo $count</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>done</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-40-the-until-loop" class="anchor" href="#shell-scripting-tutorial-40-the-until-loop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-40:</strong> <em>The 'until' Loop</em>
+</h2>
+
+<p>usage of until loop.<br>
+display the numbers 1 to 10.  </p>
+
+<p><code>count=1</code><br>
+<code>until [ $count -gt 10 ]</code><br>
+<code>do</code><br>
+<code>echo $count</code><br>
+    count=<code>expr $count + 1</code><br>
+<code>done</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>until [ $count -gt 10 ]</code></td>
+<td>usage of until loop</td>
+</tr>
+<tr>
+<td><code>do</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>echo $count</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>done</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-41-the-for-loop" class="anchor" href="#shell-scripting-tutorial-41-the-for-loop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-41:</strong> <em>The 'for' Loop</em>
+</h2>
+
+<p>usage of for loop.<br>
+for loop is pretty different than until and while loop.  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>for item in *</code></td>
+<td>usage of for loop. * means all items in current directory</td>
+</tr>
+<tr>
+<td><code>do</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>...</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>done</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-42-rant--little-work" class="anchor" href="#shell-scripting-tutorial-42-rant--little-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-42:</strong> <em>Rant &amp; Little Work</em>
+</h2>
+
+<p>comparison of real number.  </p>
+
+<p>another comparison for floating point numbers.<br>
+min=12.45<br>
+val=10.35  </p>
+
+<p>if [ 1 -eq "$(echo "${val} &lt; ${min}" | bc)" ]<br>
+then<br>
+    min=${val}<br>
+fi  </p>
+
+<p>echo "$min"  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[ $a -eq $b ]</code></td>
+<td>this is for integers and not working for real numbers</td>
+</tr>
+<tr>
+<td><code>[ "$a" = "$b" ]</code></td>
+<td>this converts number to string and compares them</td>
+</tr>
+<tr>
+<td><code>min=12.45</code></td>
+<td>another comparison example for floating point numbers</td>
+</tr>
+<tr>
+<td><code>val=10.35</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>if [ 1 -eq "$(echo "${val} &lt; ${min}" | bc)" ]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>then</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>min=${val}</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>fi</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>echo "$min"</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-43-search-patterns-using-grep" class="anchor" href="#shell-scripting-tutorial-43-search-patterns-using-grep" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-43:</strong> <em>Search Patterns Using 'grep'</em>
+</h2>
+
+<p>Usage of 'grep' command.<br>
+<strong>grep</strong> is same as using <strong>ctrl+f</strong> option in a file.  </p>
+
+<p><strong>grep -i</strong>: ignores case sensitivity
+<strong>grep -n</strong>: shows line numbers for search results.
+<strong>grep -c</strong>: shows the total number of the line that has money.
+<strong>grep -v</strong>: shows the grep result for not matching lines.</p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>grep money text_file</code></td>
+<td>search "money" in text_file</td>
+</tr>
+<tr>
+<td><code>grep -i money text_file</code></td>
+<td>search "money" in text_file by ignoring case sensitivity.</td>
+</tr>
+<tr>
+<td><code>grep -i -n money text_file</code></td>
+<td>search "money" in text_file by ignoring case sensitivity, and shows line numbers</td>
+</tr>
+<tr>
+<td><code>grep -i -c money text_file</code></td>
+<td>search "money" in text_file by ignoring case sensitivity, and shows count of money line</td>
+</tr>
+<tr>
+<td><code>grep -i -v money text_file</code></td>
+<td>search "money" in text_file by ignoring case sensitivity, and shows the lines that has no money</td>
+</tr>
+</tbody>
+</table>
+
+<p>##<strong>Shell Scripting Tutorial-44:</strong> <em>The 'passwd' File Explained</em> ##</p>
+
+<p>Usage of file "passwd".  </p>
+
+<p><code>cat /etc/passwd</code> command shows the content of passwd file.<br>
+<strong>joker<g-emoji alias="x" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/274c.png">❌</g-emoji>1000:1000:joker,,,:/home/joker:/bin/bash</strong>  </p>
+
+<p>filed 1 -&gt; <strong>joker</strong>: user name<br>
+field 2 -&gt; <strong>x</strong>: password is encrypted for the user<br>
+field 3 -&gt; <strong>1000</strong>: uid (userid). from 1 to 99 id are reserved for predefined accounts<br>
+field 4 -&gt; <strong>1000</strong>: group id.
+field 5 -&gt; <strong>joker,,,</strong>: the name of the computer
+field 6 -&gt; <strong>/home/joker</strong>: home folder
+field 7 -&gt; <strong>/bin/bash</strong>: shell </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cat /etc/passwd</code></td>
+<td>shows info about the accounts of the computer</td>
+</tr>
+<tr>
+<td><code>joker:x:1000:1000:joker,,,:/home/joker:/bin/bash</code></td>
+<td>output of the file</td>
+</tr>
+<tr>
+<td><code>joker</code></td>
+<td>field 1: username</td>
+</tr>
+<tr>
+<td><code>x</code></td>
+<td>field 2: password</td>
+</tr>
+<tr>
+<td><code>1000</code></td>
+<td>field 3: user id</td>
+</tr>
+<tr>
+<td><code>1000</code></td>
+<td>field 4: group id</td>
+</tr>
+<tr>
+<td><code>joker,,,</code></td>
+<td>field 5: name of the computer</td>
+</tr>
+<tr>
+<td><code>/home/joker</code></td>
+<td>field 6: home folder of the user</td>
+</tr>
+<tr>
+<td><code>/bin/bash</code></td>
+<td>field 7: shell</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-45-the-internal-field-separator" class="anchor" href="#shell-scripting-tutorial-45-the-internal-field-separator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-45:</strong> <em>The Internal Field Separator</em>
+</h2>
+
+<p>Usage of IFS (internal field separator)   </p>
+
+<p><code>set this is the forty fifth tutorial.</code> sets the positional parameter  </p>
+
+<p>default IFS character is space. It can be changed as following:<br>
+<code>IFS=:</code> so, IFS is changed to :  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>IFS=:</code></td>
+<td>Internal file separator is changed</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-46-passwd-file-revisited" class="anchor" href="#shell-scripting-tutorial-46-passwd-file-revisited" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-46:</strong> <em>'passwd' File Revisited</em>
+</h2>
+
+<p>Example of using passwd file, IFS, grep and set command.</p>
+
+<p><code>echo "Enter Username:\c"</code><br>
+<code>read logname</code>  </p>
+
+<p><code># takes the line that is associated with the username</code><br>
+<code>line='grep $logname /etc/passwd'</code>  </p>
+
+<p><code>IFS=: # the separator is : in passwd file</code><br>
+<code>set $line</code>  </p>
+
+<p><code>echo "Username:$1"</code><br>
+<code>echo "User ID: $3"</code><br>
+<code>echo "Group ID: $4"</code><br>
+<code>echo "Comment Field: $5"</code><br>
+<code>echo "Home Folder: $6"</code><br>
+<code>echo "Default shell: $7"</code>  </p>
+
+<h2>
+<a id="shell-scripting-tutorial-47-reading-from-a-file" class="anchor" href="#shell-scripting-tutorial-47-reading-from-a-file" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-47:</strong> <em>Reading From a File</em>
+</h2>
+
+<p>First, file should load to <strong>exec</strong>, at the same time current settings should be kept.<br>
+<strong>terminal</strong> variable holds the current settings and it assigns back the settings after reading operation.  </p>
+
+<p><code>terminal='tty'</code><br>
+<code>exec &lt; $fname</code>  </p>
+
+<p><code>while read line</code><br>
+<code>do</code><br>
+<code>echo "$line"</code><br>
+<code>done</code>  </p>
+
+<p><code>exec &lt; $terminal</code>  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>terminal='tty'</code></td>
+<td>takes the current settings of the terminal</td>
+</tr>
+<tr>
+<td><code>exec &lt; $fname</code></td>
+<td>loads the file content</td>
+</tr>
+<tr>
+<td><code>while read line</code></td>
+<td>reads the line of the exec which is $fname in this case</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-48-sleep-while-you-are-at-work" class="anchor" href="#shell-scripting-tutorial-48-sleep-while-you-are-at-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-48:</strong> <em>Sleep While You are at Work</em>
+</h2>
+
+<p>Usage of <strong>sleep</strong> command. Sleep makes a time delay on the execution of shell.  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sleep 5</code></td>
+<td>shell execution sleeps 5 seconds</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-49-count-the-number-of-words--sentences-in-a-text-file-without-using-wc" class="anchor" href="#shell-scripting-tutorial-49-count-the-number-of-words--sentences-in-a-text-file-without-using-wc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-49:</strong> <em>Count the number of words &amp; sentences in a text file without using 'wc'</em>
+</h2>
+
+<p>An example is ran.  ##<strong>Shell Scripting Tutorial-50:</strong> <em>Fetch &amp; Redirect Man Pages of commands using 'for loop'</em> ##</p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>man cat &gt;&gt; helpfile</code></td>
+<td>appends output of man command to helpfile</td>
+</tr>
+<tr>
+<td><code>for cmd in 'cat commandlist'</code></td>
+<td>for loop iteration of a file</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-51-nested-loops" class="anchor" href="#shell-scripting-tutorial-51-nested-loops" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-51:</strong> <em>Nested Loops</em>
+</h2>
+
+<p>Example for nested loop.  </p>
+
+<p><code>a=1</code><br>
+<code>while [ $a -le 3 ]</code><br>
+<code>do</code><br>
+<code>b=1</code><br>
+<code>while [ $b -le 3 ]</code><br>
+<code>do</code><br>
+<code>c=1</code><br>
+<code>while [ $c -le 3 ]</code><br>
+<code>do</code><br>
+<code>echo "$a$b$c"</code><br>
+<code>c='expr $c + 1</code><br>
+<code>done</code><br>
+<code>b='expr $b + 1''</code><br>
+<code>done</code><br>
+<code>a='expr $a + 1'</code><br>
+<code>done</code>  </p>
+
+<h2>
+<a id="shell-scripting-tutorial-52-the-break-statement" class="anchor" href="#shell-scripting-tutorial-52-the-break-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-52:</strong> <em>The 'break' Statement</em>
+</h2>
+
+<p>break terminates the loop.  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>break</code></td>
+<td>ends the loop iteration</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-53-the-continue-statement" class="anchor" href="#shell-scripting-tutorial-53-the-continue-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-53:</strong> <em>The 'continue' Statement</em>
+</h2>
+
+<p>continue sends execution the beginning of the loop.  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>continue</code></td>
+<td>returns back to start of loop</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-54-more-on-metacharacters" class="anchor" href="#shell-scripting-tutorial-54-more-on-metacharacters" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-54:</strong> <em>More on Metacharacters</em>
+</h2>
+
+<p>Running more than one command a line.<br>
+<code>ls ; cal ; banner "mustafa celik"</code></p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ls ; cal ; banner "hello"</code></td>
+<td>running more than one command</td>
+</tr>
+<tr>
+<td><code>grep -i money text_tutorial_54 &gt; pattern &amp;&amp; echo "Task was completed."</code></td>
+<td>&amp;&amp; works if first part is ok</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-55-adding--removing-users" class="anchor" href="#shell-scripting-tutorial-55-adding--removing-users" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-55:</strong> <em>Adding &amp; Removing Users</em>
+</h2>
+
+<p>by using GUI user can be added and deleted.  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sudo login</code></td>
+<td>change the user</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-56-know-when-users-log-in-part-one" class="anchor" href="#shell-scripting-tutorial-56-know-when-users-log-in-part-one" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-56:</strong> <em>Know when users log in Part One</em>
+</h2>
+
+<p>login example.   </p>
+
+<h2>
+<a id="shell-scripting-tutorial-57-know-when-users-log-in-part-two" class="anchor" href="#shell-scripting-tutorial-57-know-when-users-log-in-part-two" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-57:</strong> <em>Know when users log in Part Two</em>
+</h2>
+
+<p>example of login.</p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>grep "$logname" /etc/passwd &gt; /dev/null</code></td>
+<td>checking the user exists or not</td>
+</tr>
+<tr>
+<td><code>if [ $? -eq 0 ]</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-58-know-when-users-log-in-final-part" class="anchor" href="#shell-scripting-tutorial-58-know-when-users-log-in-final-part" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-58:</strong> <em>Know when users log in Final Part</em>
+</h2>
+
+<p>loging example is implemented.  </p>
+
+<h2>
+<a id="shell-scripting-tutorial-59-communicate-with-other-users-using-write" class="anchor" href="#shell-scripting-tutorial-59-communicate-with-other-users-using-write" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-59:</strong> <em>Communicate with other users using 'write'</em>
+</h2>
+
+<p>Both users must be logged in different terminals.  </p>
+
+<p><code>write username</code>  the writer command.<br>
+<code>mesg -y</code> the receiver command.  </p>
+
+<p><code>finger</code> shows the terminal of other users.  </p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>write username</code></td>
+<td>message command</td>
+</tr>
+<tr>
+<td><code>mesg -y</code></td>
+<td>receiver command to take messages</td>
+</tr>
+<tr>
+<td><code>finger</code></td>
+<td>terminal list for messaging</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-60-create-your-own-commands-using-functions" class="anchor" href="#shell-scripting-tutorial-60-create-your-own-commands-using-functions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-60:</strong> <em>Create Your Own Commands Using Functions</em>
+</h2>
+
+<p>following is the function usage.<br>
+run the following command to initialize the function:<br>
+<code>$ . function_script.sh</code></p>
+
+<p><code>youtube()</code><br>
+<code>{</code><br>
+    <code>echo "Good Morning."</code><br>
+<code>}</code><br>
+<code>byebye()</code><br>
+<code>{</code><br>
+    <code>cal</code><br>
+<code>}</code>  </p>
+
+<p>use following command to release the function:<br>
+<code>$ unset youtube</code></p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>unset youtube</code></td>
+<td>removes the function</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="shell-scripting-tutorial-61-executing-multiple-scripts" class="anchor" href="#shell-scripting-tutorial-61-executing-multiple-scripts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Shell Scripting Tutorial-61:</strong> <em>Executing Multiple Scripts</em>
+</h2>
+
+<p>Script should run at the last line of the previous script. </p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>

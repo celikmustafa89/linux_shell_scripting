@@ -51,3 +51,109 @@
             $ bash bar
             $ sh bar
             $ ./bar
+
+# ===================================================================================
+
+    Linux Notes from Cihangir Beşiktaş
+
+        LVM:
+        ---
+        Pyhsical volumes, volume groups, logical volumes
+
+        - pvcreate, pvdisplay, pvremove
+        - vgcreate, vgdisplay
+        - lvcreate, lvdisplay
+
+
+
+        Resource Limits:
+        ----------------
+        Resource limits of processes
+
+         ulimit -a
+
+        core file size          (blocks, -c) 0
+        data seg size           (kbytes, -d) unlimited
+        scheduling priority             (-e) 0
+        file size               (blocks, -f) unlimited
+        pending signals                 (-i) 63354
+        max locked memory       (kbytes, -l) 64
+        max memory size         (kbytes, -m) unlimited
+        open files                      (-n) 1024
+        pipe size            (512 bytes, -p) 8
+        POSIX message queues     (bytes, -q) 819200
+        real-time priority              (-r) 0
+        stack size              (kbytes, -s) 8192
+        cpu time               (seconds, -t) unlimited
+        max user processes              (-u) 1024
+        virtual memory          (kbytes, -v) unlimited
+        file locks                      (-x) unlimited
+
+
+
+        Find Large Files:
+        ----------------
+        Files greater than 100MB in /var/log
+        find /var/log -type f -size +100000k -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
+
+
+
+        Kernel Configuration:
+        ---------------------
+        There are three ways to pass options to the kernel and thus control its behaviour:
+
+            When building the kernel.
+            When starting the kernel (usually, when invoked from a boot loader).
+            At runtime (through the files in /proc and /sys).
+
+        # cat /etc/sysctl.conf
+        net.ipv4.ip_forward = 1
+
+        # sysctl kernel.sysrq=1
+        # echo "1" > /proc/sys/kernel/sysrq
+
+
+
+        Process Operations:
+        -------------------
+        List parent process:
+        # ps -o ppid= -p <pid>
+        # pstree
+
+        Kill zombie processes:
+        # kill -s SIGCHLD pid
+
+
+        Monitoring
+        --------------
+        # top
+        # vmstat
+        # lsof
+        # tcpdump
+        # netstat
+        # iptraf
+        # iftop
+
+        I/O Monitoring:
+        # iostat - device level stats
+        # sar
+        # iotop - process level stats
+
+
+
+        RAID:
+        -----
+
+        Raid 0: for large logical volume
+        Raid 1: redundant volumes
+        Raid 4: block-level striping with a dedicated parity disk
+        Raid 5: block-level striping with distributed parity
+        Raid 6: extends RAID 5 by adding another parity block
+                it uses block-level striping with two parity blocks distributed across all member disks.
+
+
+
+        DNS:
+        ---
+        TTL: https://www.dnswatch.info/articles/dns-update
+

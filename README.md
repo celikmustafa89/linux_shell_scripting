@@ -937,7 +937,10 @@ Usage of **sleep** command. Sleep makes a time delay on the execution of shell.
 
 ##**Shell Scripting Tutorial-49:** _Count the number of words & sentences in a text file without using 'wc'_ ##
 
-An example is ran.  ##**Shell Scripting Tutorial-50:** _Fetch & Redirect Man Pages of commands using 'for loop'_ ##
+An example is ran.  
+
+
+##**Shell Scripting Tutorial-50:** _Fetch & Redirect Man Pages of commands using 'for loop'_ ##
 
 
 | Command | Description |

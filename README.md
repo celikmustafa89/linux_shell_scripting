@@ -1,4 +1,3 @@
-
 <h1 id="shell-scripting"><strong>SHELL SCRIPTING</strong></h1>
 
 <hr>

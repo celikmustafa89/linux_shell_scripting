@@ -1,3 +1,21 @@
+<style>
+ #preview-box {
+     background-color: rgba(1,1,1,0.1);
+     padding: 1px 10px;
+     border-radius: 10px;
+ }
+</style>
+<link id="linkstyle" rel='stylesheet' href='theme1.css'/>
+
+<script>
+ var linkstyle = document.getElementById('linkstyle');
+ var themes = document.getElementById('themes');
+
+ themes.onchange = function(e) {
+     linkstyle.href = themes.value;
+ };
+</script>
+
 <h1 id="shell-scripting"><strong>SHELL SCRIPTING</strong></h1>
 
 <hr>

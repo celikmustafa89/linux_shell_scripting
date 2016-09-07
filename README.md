@@ -1532,8 +1532,9 @@ You entered a vowel.
 | Command | Description |
 |---|---|
 | `if [ $var  = a -o $var  = e -o $var  = i -o $var  = u -o $var  = o ]` | usage of OR operator |
+
   
-  ##**Shell Scripting Tutorial-37:** _The 'case' Statement_ ##
+##**Shell Scripting Tutorial-37:** _The 'case' Statement_ ##
 
 The case statement is the fourth version of the condition statements.  
 1. if

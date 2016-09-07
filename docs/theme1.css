@@ -11,12 +11,12 @@ body {
 
 /* links */
 a:link {
-	color: #00f;
+	color: #087830;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #00a;
+	color: #A9BA9D;
 	text-decoration: none;
 }
 
@@ -84,7 +84,7 @@ h1	{
 h2	{
 	margin-top: 2.5em;
 	font-size: 24px;
-	color: #000;
+	color: #087830;
 	padding-bottom: 2px;
 	border-bottom: 1px solid #919699;
 }
@@ -92,7 +92,7 @@ h3	{
 	margin-top: 2em;
 	margin-bottom: .5em;
 	font-size: 17px;
-	color: #000;
+	color: #007AA5;
 }
 h4	{
 	margin-top: 2em;

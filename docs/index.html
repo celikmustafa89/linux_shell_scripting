@@ -2,6 +2,8 @@
 
 <hr>
 
+
+
 <h2 id="table-of-contents"><strong>Table of Contents</strong></h2>
 
 <p><div class="toc">
@@ -96,11 +98,13 @@
 <li><a href="#shell-scripting-tutorial-41-the-for-loop">Shell Scripting Tutorial-41: The ‘for’ Loop</a></li>
 <li><a href="#shell-scripting-tutorial-42-rant-little-work">Shell Scripting Tutorial-42: Rant &amp; Little Work</a></li>
 <li><a href="#shell-scripting-tutorial-43-search-patterns-using-grep">Shell Scripting Tutorial-43: Search Patterns Using ‘grep’</a></li>
+<li><a href="#shell-scripting-tutorial-44-the-passwd-file-explained">Shell Scripting Tutorial-44: The ‘passwd’ File Explained</a></li>
 <li><a href="#shell-scripting-tutorial-45-the-internal-field-separator">Shell Scripting Tutorial-45: The Internal Field Separator</a></li>
 <li><a href="#shell-scripting-tutorial-46-passwd-file-revisited">Shell Scripting Tutorial-46: ‘passwd’ File Revisited</a></li>
 <li><a href="#shell-scripting-tutorial-47-reading-from-a-file">Shell Scripting Tutorial-47: Reading From a File</a></li>
 <li><a href="#shell-scripting-tutorial-48-sleep-while-you-are-at-work">Shell Scripting Tutorial-48: Sleep While You are at Work</a></li>
 <li><a href="#shell-scripting-tutorial-49-count-the-number-of-words-sentences-in-a-text-file-without-using-wc">Shell Scripting Tutorial-49: Count the number of words &amp; sentences in a text file without using ‘wc’</a></li>
+<li><a href="#shell-scripting-tutorial-50-fetch-redirect-man-pages-of-commands-using-for-loop">Shell Scripting Tutorial-50: Fetch &amp; Redirect Man Pages of commands using ‘for loop’</a></li>
 <li><a href="#shell-scripting-tutorial-51-nested-loops">Shell Scripting Tutorial-51: Nested Loops</a></li>
 <li><a href="#shell-scripting-tutorial-52-the-break-statement">Shell Scripting Tutorial-52: The ‘break’ Statement</a></li>
 <li><a href="#shell-scripting-tutorial-53-the-continue-statement">Shell Scripting Tutorial-53: The ‘continue’ Statement</a></li>
@@ -118,9 +122,13 @@
 </div>
 </p>
 
+
+
 <h2 id="shell-scripting-tutorial-1-introduction"><strong>Shell Scripting Tutorial-1:</strong> <em>Introduction</em></h2>
 
 <p>Install a linux distribution.</p>
+
+
 
 <h2 id="shell-scripting-tutorial-2-shell-kernel-terminal-and-more"><strong>Shell Scripting Tutorial-2:</strong> <em>Shell, Kernel, Terminal and More</em></h2>
 
@@ -270,6 +278,8 @@ date <span class="hljs-string">'+DATE: %m-%y%nTIME: %H:%M:%S'</span> <span class
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-4-create-files-directories"><strong>Shell Scripting Tutorial-4:</strong> <em>Create Files &amp; Directories</em></h2>
 
 <p><strong>touch</strong> is used to create empty files. <br>
@@ -289,6 +299,8 @@ mkdir Documents/folder1 <span class="hljs-comment"># creates folder in a specifi
 <span class="hljs-built_in">cd</span> Documents/folder1</code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs "></code></pre>
 
@@ -312,6 +324,8 @@ mkdir Documents/folder1 <span class="hljs-comment"># creates folder in a specifi
   <td>creates a folder in Documents directory</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-5-text-files-create-merge-play"><strong>Shell Scripting Tutorial-5:</strong> <em>Text Files: Create, Merge &amp; Play</em></h2>
@@ -344,6 +358,8 @@ cat test_file test_file2 &gt; merged_test_files <span class="hljs-comment"># mer
 cat &lt; merged_test_files <span class="hljs-comment"># shows both test files' content</span></code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs livecodeserver">test_file_content <span class="hljs-number">1</span> <span class="hljs-constant">EOF</span>
 test_file_content <span class="hljs-number">1</span> <span class="hljs-constant">EOF</span>
@@ -386,6 +402,8 @@ test_file2_content <span class="hljs-number">2</span> <span class="hljs-constant
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-6-rename-delete-files-directories"><strong>Shell Scripting Tutorial-6:</strong> <em>Rename &amp; Delete Files &amp; Directories</em></h2>
 
 
@@ -426,6 +444,8 @@ rmdir test <span class="hljs-comment"># deletes the directory</span>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs "></code></pre>
 
 <table>
@@ -456,6 +476,8 @@ rmdir test <span class="hljs-comment"># deletes the directory</span>
   <td>deletes the empty directory</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-7-create-copies-links-to-files-directories"><strong>Shell Scripting Tutorial-7:</strong> <em>Create Copies, Links to Files &amp; Directories</em></h2>
@@ -499,6 +521,8 @@ ln <span class="hljs-operator">-s</span>  old old_soft <span class="hljs-comment
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs "></code></pre>
 
 <table>
@@ -521,6 +545,8 @@ ln <span class="hljs-operator">-s</span>  old old_soft <span class="hljs-comment
   <td>creates a soft link</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-8-file-permissions"><strong>Shell Scripting Tutorial-8:</strong> <em>File Permissions</em></h2>
@@ -559,6 +585,8 @@ umask <span class="hljs-comment"># shows the number that is used to create defau
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs ">0022</code></pre>
 
 <table>
@@ -573,6 +601,8 @@ umask <span class="hljs-comment"># shows the number that is used to create defau
   <td>shows file and directory permission creation base number</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-9-see-whats-using-in-ls"><strong>Shell Scripting Tutorial-9:</strong> <em>See What’s Using in ‘ls’</em></h2>
@@ -621,6 +651,8 @@ ls <span class="hljs-operator">-a</span> <span class="hljs-comment"># lists all 
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs livecodeserver">list <span class="hljs-operator">of</span> all <span class="hljs-built_in">files</span> will be printed.</code></pre>
 
 <table>
@@ -647,6 +679,8 @@ ls <span class="hljs-operator">-a</span> <span class="hljs-comment"># lists all 
   <td>list all files and directories including hidden ones</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-10-change-file-permissions-using-chmod"><strong>Shell Scripting Tutorial-10:</strong> <em>Change File Permissions Using ‘chmod’</em></h2>
@@ -685,6 +719,8 @@ uname <span class="hljs-operator">-a</span> <span class="hljs-comment"># shows a
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs bash"><span class="hljs-comment">####file list will be printed here.</span>
 Linux joker <span class="hljs-number">3.16</span>.<span class="hljs-number">0</span>-<span class="hljs-number">38</span>-generic <span class="hljs-comment">#52~14.04.1-Ubuntu SMP Fri May 8 09:43:57 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux</span>
 </code></pre>
@@ -705,6 +741,8 @@ Linux joker <span class="hljs-number">3.16</span>.<span class="hljs-number">0</s
   <td>shows all details about machine and kernel</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-11-count-lines-words-characters-using-wc"><strong>Shell Scripting Tutorial-11:</strong> <em>Count Lines, Words &amp; Characters Using ‘wc’</em></h2>
@@ -753,6 +791,8 @@ wc -c test # shows the number <span class="hljs-keyword">of</span> characters <s
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs livecodeserver">commandlist_tutorial_50:     ASCII <span class="hljs-keyword">text</span>
 create_consecutive_files.sh: Bourne-Again <span class="hljs-built_in">shell</span> script, ASCII <span class="hljs-keyword">text</span> executable
 empty_file1:                 <span class="hljs-constant">empty</span> 
@@ -796,6 +836,8 @@ test: ASCII <span class="hljs-keyword">text</span>
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-12-sort"><strong>Shell Scripting Tutorial-12:</strong> <em>Sort</em></h2>
 
 
@@ -836,6 +878,8 @@ sort
 </code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs php">dogs
 cats
@@ -881,6 +925,8 @@ Saving <span class="hljs-keyword">Private</span> Ryan
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-13-cut-through-your-files"><strong>Shell Scripting Tutorial-13:</strong> <em>Cut Through Your Files</em></h2>
 
 
@@ -911,6 +957,8 @@ cut <span class="hljs-operator">-d</span><span class="hljs-string">"-"</span> <s
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs lasso">Name<span class="hljs-attribute">-Sport</span><span class="hljs-attribute">-Age</span>
 Roger<span class="hljs-attribute">-Tennis</span><span class="hljs-subst">-</span><span class="hljs-number">30</span>
 Rafel<span class="hljs-attribute">-Tennis</span><span class="hljs-subst">-</span><span class="hljs-number">25</span>
@@ -938,6 +986,8 @@ Kobe<span class="hljs-subst">-</span><span class="hljs-number">34</span>
   <td>prints the 1 and 3 column of the file, and - is delimeter</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-14-convert-copy-files-with-dd"><strong>Shell Scripting Tutorial-14:</strong> <em>Convert &amp; Copy Files with ‘dd’</em></h2>
@@ -971,6 +1021,8 @@ cat test2
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs vhdl">this <span class="hljs-keyword">is</span> a test <span class="hljs-keyword">file</span>.
 <span class="hljs-number">0</span>+<span class="hljs-number">1</span> records <span class="hljs-keyword">in</span>
 <span class="hljs-number">0</span>+<span class="hljs-number">1</span> records <span class="hljs-keyword">out</span>
@@ -999,6 +1051,8 @@ this <span class="hljs-keyword">is</span> a test <span class="hljs-keyword">file
   <td>converts encoding to european based encoding</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-15-get-help-view-fancy-text-reduce-file-size"><strong>Shell Scripting Tutorial-15:</strong> <em>Get Help, View Fancy Text &amp; Reduce File Size</em></h2>
@@ -1048,6 +1102,8 @@ zcat -v test.Z  <span class="hljs-comment"># prints compressed file readable.</s
 uncompress -v test.Z <span class="hljs-comment"># uncompress the compresed file.</span></code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs ruleslanguage">Whole Man Page of cat command will be printed.
 
@@ -1137,6 +1193,8 @@ gzip: test.Z: No such file or directory
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-16-hello-world"><strong>Shell Scripting Tutorial-16:</strong> <em>Hello World!</em></h2>
 
 <p>hello world example is implemented using <code>echo</code> command. <br>
@@ -1149,6 +1207,8 @@ gzip: test.Z: No such file or directory
 <span class="hljs-built_in">echo</span> <span class="hljs-string">"Hello World!"</span></code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs erlang-repl"><span class="hljs-variable">Hello</span> <span class="hljs-variable">World</span><span class="hljs-exclamation_mark">!</span></code></pre>
 
@@ -1164,6 +1224,8 @@ gzip: test.Z: No such file or directory
   <td>prints hello world to terminal.</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-17-use-command-in-your-script"><strong>Shell Scripting Tutorial-17:</strong> <em>Use Command in Your Script</em></h2>
@@ -1185,6 +1247,8 @@ banner <span class="hljs-string">"The End"</span></code></pre>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs ruleslanguage">/home/joker/PycharmProjects/bash_script
 total <span class="hljs-number">348</span>
 -rw-r--r-- <span class="hljs-number">1</span> joker joker    <span class="hljs-number">34</span> Aug <span class="hljs-number">31</span> <span class="hljs-number">17</span>:<span class="hljs-number">11</span> animals
@@ -1204,6 +1268,8 @@ drwxr-xr-x <span class="hljs-number">2</span> joker joker  <span class="hljs-num
    <span class="hljs-array">#     </span><span class="hljs-array">#    </span><span class="hljs-array">#  </span>#####<span class="hljs-array">#         </span>######<span class="hljs-array">#  </span><span class="hljs-array">#    </span><span class="hljs-array">#  </span>#####
 
 </code></pre>
+
+
 
 <h2 id="shell-scripting-tutorial-18-shell-variables-grab-user-input-using-read"><strong>Shell Scripting Tutorial-18:</strong> <em>Shell Variables, Grab User Input Using ‘read’</em></h2>
 
@@ -1234,6 +1300,8 @@ drwxr-xr-x <span class="hljs-number">2</span> joker joker  <span class="hljs-num
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs applescript">Please enter your <span class="hljs-property">name</span>: 
 mustafa celik
 Hello mustafa celik
@@ -1251,6 +1319,8 @@ Hello mustafa celik
   <td>reads input from user and assign it to name variable</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-19-positional-parameters"><strong>Shell Scripting Tutorial-19:</strong> <em>Positional Parameters</em></h2>
@@ -1276,15 +1346,19 @@ cat <span class="hljs-variable">$name</span></code></pre>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs livecodeserver">provide <span class="hljs-operator">a</span> <span class="hljs-built_in">file</span> name <span class="hljs-built_in">to</span> change: 
 new_name
 falkdsjflad sgadg
 </code></pre>
 
+
+
 <h2 id="shell-scripting-tutorial-20-more-on-positional-parameters"><strong>Shell Scripting Tutorial-20:</strong> <em>More on Positional Parameters</em></h2>
 
 <p>setting positional parameters from the content of a file. <br>
-<code>set cat test</code> this usage is wrong which assigns <script type="math/tex" id="MathJax-Element-13">1:cat and </script>2:test <br>
+<code>set cat test</code> this usage is wrong which assigns <script type="math/tex" id="MathJax-Element-1">1:cat and </script>2:test <br>
 <code>echo $*</code> <br>
 “set `cat test`”  this assigns file content as parameters <br>
 <code>cat test</code> <br>
@@ -1306,6 +1380,8 @@ ls <span class="hljs-operator">-l</span> <span class="hljs-variable">$1</span>
 <span class="hljs-built_in">echo</span> $*</code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs brainfuck"><span class="hljs-literal">-</span><span class="hljs-comment">rw</span><span class="hljs-literal">-</span><span class="hljs-comment">r</span><span class="hljs-literal">-</span><span class="hljs-literal">-</span><span class="hljs-comment">r</span><span class="hljs-literal">-</span><span class="hljs-literal">-</span> <span class="hljs-comment">1</span> <span class="hljs-comment">joker</span> <span class="hljs-comment">joker</span>   <span class="hljs-comment">375</span> <span class="hljs-comment">Aug</span> <span class="hljs-comment">27</span> <span class="hljs-comment">21:07</span> <span class="hljs-comment">video_tutorial_60</span><span class="hljs-string">.</span><span class="hljs-comment">sh</span>
 <span class="hljs-literal">-</span><span class="hljs-comment">rw</span><span class="hljs-literal">-</span><span class="hljs-comment">r</span><span class="hljs-literal">-</span><span class="hljs-literal">-</span><span class="hljs-comment">r</span><span class="hljs-literal">-</span><span class="hljs-literal">-</span> <span class="hljs-comment">1</span> <span class="hljs-comment">joker</span> <span class="hljs-comment">joker</span>   <span class="hljs-comment">201</span> <span class="hljs-comment">Aug</span> <span class="hljs-comment">27</span> <span class="hljs-comment">21:07</span> <span class="hljs-comment">video_tutorial_61</span><span class="hljs-string">.</span><span class="hljs-comment">sh</span>
@@ -1329,6 +1405,8 @@ ls <span class="hljs-operator">-l</span> <span class="hljs-variable">$1</span>
   <td>assigns output of the command to positional parameters</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-21-reverse-quotes-accent-graves"><strong>Shell Scripting Tutorial-21:</strong> <em>Reverse Quotes &amp; Accent Graves</em></h2>
@@ -1363,6 +1441,8 @@ mv <span class="hljs-variable">$name</span> <span class="hljs-variable">$name</s
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs vhdl"># name <span class="hljs-keyword">of</span> the <span class="hljs-keyword">file</span> should be changed. <span class="hljs-keyword">type</span> ls <span class="hljs-keyword">to</span> observe.</code></pre>
 
 <table>
@@ -1374,13 +1454,15 @@ mv <span class="hljs-variable">$name</span> <span class="hljs-variable">$name</s
 </thead>
 <tbody><tr>
   <td><code>set word1 word2 word3</code></td>
-  <td>assigns <script type="math/tex" id="MathJax-Element-25">1: word1 </script>2: word2 and $3: word3</td>
+  <td>assigns <script type="math/tex" id="MathJax-Element-2">1: word1 </script>2: word2 and $3: word3</td>
 </tr>
 <tr>
   <td><code>echo $*</code></td>
   <td>prints all positional parameters</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-22-count-the-number-of-command-line-arguments-using"><strong>Shell Scripting Tutorial-22:</strong> <em>Count the Number of Command Line Arguments Using ‘$#’</em></h2>
@@ -1401,6 +1483,8 @@ mv <span class="hljs-variable">$name</span> <span class="hljs-variable">$name</s
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs livecodeserver">The total <span class="hljs-built_in">number</span> <span class="hljs-operator">of</span> <span class="hljs-keyword">items</span> <span class="hljs-operator">in</span> current <span class="hljs-built_in">directory</span> is=<span class="hljs-number">91</span></code></pre>
 
 <table>
@@ -1415,6 +1499,8 @@ mv <span class="hljs-variable">$name</span> <span class="hljs-variable">$name</s
   <td>prints the number of parameter.</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-23-math-on-integers-using-expr"><strong>Shell Scripting Tutorial-23:</strong> <em>Math on Integers Using ‘expr’</em></h2>
@@ -1442,6 +1528,8 @@ a=<span class="hljs-number">30</span> b=<span class="hljs-number">15</span>
 <span class="hljs-built_in">echo</span> `expr <span class="hljs-variable">$a</span> % <span class="hljs-variable">$b</span>`</code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs ">45
 15
@@ -1480,6 +1568,8 @@ a=<span class="hljs-number">30</span> b=<span class="hljs-number">15</span>
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-24-operator-precedence"><strong>Shell Scripting Tutorial-24:</strong> <em>Operator Precedence</em></h2>
 
 <p>/, *, % operations have first priority. <br>
@@ -1499,6 +1589,8 @@ a=<span class="hljs-number">30</span> b=<span class="hljs-number">15</span> c=<s
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs ">102</code></pre>
 
 <table>
@@ -1513,6 +1605,8 @@ a=<span class="hljs-number">30</span> b=<span class="hljs-number">15</span> c=<s
   <td>operation precedence using \</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-25-math-on-real-numbers"><strong>Shell Scripting Tutorial-25:</strong> <em>Math on Real Numbers</em></h2>
@@ -1542,6 +1636,8 @@ f=`<span class="hljs-built_in">echo</span> <span class="hljs-variable">$a</span>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs ">14.0 7.0 36.7 3
 </code></pre>
 
@@ -1557,6 +1653,8 @@ f=`<span class="hljs-built_in">echo</span> <span class="hljs-variable">$a</span>
   <td>bs is used for floating point operations with pipe or</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-26-escape-sequences"><strong>Shell Scripting Tutorial-26:</strong> <em>Escape Sequences</em></h2>
@@ -1584,6 +1682,8 @@ f=`<span class="hljs-built_in">echo</span> <span class="hljs-variable">$a</span>
 <span class="hljs-built_in">echo</span> <span class="hljs-string">"\033[7mHey World, what's up?\033[0m"</span> <span class="hljs-comment"># writes the text with black background</span></code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs vbnet">Hey World, 
 what<span class="hljs-comment">'s up?</span>
@@ -1628,6 +1728,8 @@ Hey World, what<span class="hljs-comment">'s up?</span>
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-27-do-cool-things-with-tput"><strong>Shell Scripting Tutorial-27:</strong> <em>Do Cool Things with ‘tput’</em></h2>
 
 <p>clearing terminal. <br>
@@ -1658,6 +1760,8 @@ tput bold
 </code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs livecodeserver">Total <span class="hljs-built_in">number</span> <span class="hljs-operator">of</span> rows <span class="hljs-command"><span class="hljs-keyword">on</span> <span class="hljs-title">screen</span>=<span class="hljs-title">35</span></span>
 Total <span class="hljs-built_in">number</span> <span class="hljs-operator">of</span> columns <span class="hljs-command"><span class="hljs-keyword">on</span> <span class="hljs-title">screen</span>=<span class="hljs-title">134</span></span>
@@ -1712,6 +1816,8 @@ bye bye
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-28-if-then-statement-in-action"><strong>Shell Scripting Tutorial-28:</strong> <em>‘if-then’ Statement in Action</em></h2>
 
 <p>terminalde her komut calistiktan sonra, komutun basarili olup olmadigini gosteren bir sayi doner. <br>
@@ -1745,6 +1851,8 @@ bu ciktiyi gormek icin su komut kullanilir: <br>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs livecodeserver">Enter source <span class="hljs-operator">and</span> target <span class="hljs-built_in">file</span> names:
 test new_name     
 Your <span class="hljs-built_in">file</span> has been successfully renamed.
@@ -1772,6 +1880,8 @@ Your <span class="hljs-built_in">file</span> has been successfully renamed.
   <td><code>fi</code></td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-29-the-if-then-else-statement"><strong>Shell Scripting Tutorial-29:</strong> <em>The ‘if-then-else’ Statement</em></h2>
@@ -1805,6 +1915,8 @@ Your <span class="hljs-built_in">file</span> has been successfully renamed.
 <span class="hljs-keyword">fi</span></code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs livecodeserver">bash_script@pc $ sh video_tutorial_29.sh 
 Enter source <span class="hljs-operator">and</span> target <span class="hljs-built_in">file</span> names.
@@ -1846,10 +1958,14 @@ Your <span class="hljs-built_in">file</span> has NOT been successfully renamed.<
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-30-run-checks-on-numbers"><strong>Shell Scripting Tutorial-30:</strong> <em>Run Checks on Numbers</em></h2>
 
 <p>if checks statements are following: <br>
 <strong>Example:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs bash"><span class="hljs-shebang">#!/usr/bin/env bash
 </span>
@@ -1879,6 +1995,8 @@ Your <span class="hljs-built_in">file</span> has NOT been successfully renamed.<
 <span class="hljs-keyword">fi</span></code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs applescript">Enter a <span class="hljs-type">number</span> <span class="hljs-keyword">between</span> <span class="hljs-number">10</span> <span class="hljs-keyword">and</span> <span class="hljs-number">20</span>: <span class="hljs-number">12</span>
 That <span class="hljs-keyword">is</span> <span class="hljs-keyword">greater than</span> <span class="hljs-keyword">and</span> <span class="hljs-keyword">equal</span> <span class="hljs-keyword">to</span> <span class="hljs-number">10.</span></code></pre>
@@ -1915,6 +2033,8 @@ That <span class="hljs-keyword">is</span> <span class="hljs-keyword">greater tha
   <td>not equal</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-31-run-checks-on-files"><strong>Shell Scripting Tutorial-31:</strong> <em>Run Checks on Files</em></h2>
@@ -1983,6 +2103,8 @@ That <span class="hljs-keyword">is</span> <span class="hljs-keyword">greater tha
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs livecodeserver">Enter <span class="hljs-operator">a</span> name: new_name
 You indeed entered <span class="hljs-operator">a</span> <span class="hljs-built_in">file</span> name.
 File has <span class="hljs-built_in">read</span> permission.
@@ -2031,6 +2153,8 @@ File has <span class="hljs-built_in">write</span> permission.
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-32-append-text-to-a-file-through-shell-script"><strong>Shell Scripting Tutorial-32:</strong> <em>Append Text to a File Through Shell Script</em></h2>
 
 <p>usage of the if else statement and file checks command. <br>
@@ -2074,11 +2198,15 @@ example code: <br>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs vhdl">Enter <span class="hljs-keyword">file</span> name:new_name
 <span class="hljs-keyword">Type</span> matter <span class="hljs-keyword">to</span> append. <span class="hljs-keyword">To</span> quit press ctrl+d.
 skdg
 ssdgfs
 </code></pre>
+
+
 
 <h2 id="shell-scripting-tutorial-33-run-checks-on-strings"><strong>Shell Scripting Tutorial-33:</strong> <em>Run Checks on Strings</em></h2>
 
@@ -2117,6 +2245,8 @@ str3=   <span class="hljs-comment"># null variable</span>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs erlang-repl"><span class="hljs-function_or_atom">str1</span>: <span class="hljs-variable">Hey</span> <span class="hljs-variable">You</span><span class="hljs-exclamation_mark">!</span>
 <span class="hljs-function_or_atom">str2</span>: <span class="hljs-variable">What's</span> <span class="hljs-function_or_atom">up</span>?
 <span class="hljs-function_or_atom">str3</span>: 
@@ -2153,6 +2283,8 @@ str3=   <span class="hljs-comment"># null variable</span>
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-34-run-checks-on-stringthe-and-logical-operator"><strong>Shell Scripting Tutorial-34:</strong> <em>Run Checks on StringThe ‘AND’ Logical Operator</em></h2>
 
 <p><strong>-a</strong> is the ‘AND’ operator for shell scripting. <br>
@@ -2181,6 +2313,8 @@ Following if statement checks the variable if it is between 50 and 100. <br>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs applescript">Enter a <span class="hljs-type">number</span> <span class="hljs-keyword">between</span> <span class="hljs-number">50</span> <span class="hljs-keyword">and</span> <span class="hljs-number">100</span>:<span class="hljs-number">54</span>
 The <span class="hljs-type">number</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">between</span> <span class="hljs-number">50</span> <span class="hljs-keyword">and</span> <span class="hljs-number">100.</span>
 </code></pre>
@@ -2197,6 +2331,8 @@ The <span class="hljs-type">number</span> <span class="hljs-keyword">is</span> <
   <td>usage of AND operator</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-35-count-the-number-of-characters-in-users-input-in-your-script"><strong>Shell Scripting Tutorial-35:</strong> <em>Count the Number of Characters in User’s Input in Your Script</em></h2>
@@ -2226,6 +2362,8 @@ The <span class="hljs-type">number</span> <span class="hljs-keyword">is</span> <
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs livecodeserver">Enter  <span class="hljs-operator">a</span> <span class="hljs-keyword">character</span>:d
 You entered <span class="hljs-operator">a</span> <span class="hljs-keyword">character</span>.</code></pre>
 
@@ -2241,6 +2379,8 @@ You entered <span class="hljs-operator">a</span> <span class="hljs-keyword">char
   <td>wc -c’ -eq 2 ]`</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-36-the-or-logical-operator"><strong>Shell Scripting Tutorial-36:</strong> <em>The ‘OR’ Logical Operator</em></h2>
@@ -2275,6 +2415,8 @@ Following if statement checks the variable if it is vowel or not. <br>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs livecodeserver">Enter <span class="hljs-operator">a</span> lowercase <span class="hljs-keyword">character</span>:m
 You did <span class="hljs-operator">not</span> enter <span class="hljs-operator">a</span> vowel.
 
@@ -2306,6 +2448,8 @@ You entered <span class="hljs-operator">a</span> vowel.</code></pre>
 <p>usage of case statement: <br>
 <strong>Example:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs bash"><span class="hljs-shebang">#!/usr/bin/env bash
 </span>
 <span class="hljs-comment"># 1. script ask users to enter a character</span>
@@ -2335,6 +2479,8 @@ You entered <span class="hljs-operator">a</span> vowel.</code></pre>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs livecodeserver">Enter <span class="hljs-operator">a</span> <span class="hljs-keyword">character</span>:d
 You entered <span class="hljs-operator">a</span> lowercase <span class="hljs-keyword">character</span>.
 
@@ -2347,10 +2493,14 @@ You entered more than <span class="hljs-constant">one</span> <span class="hljs-k
 Enter <span class="hljs-operator">a</span> <span class="hljs-keyword">character</span>:<span class="hljs-number">4</span>
 You entered <span class="hljs-operator">a</span> digit.</code></pre>
 
+
+
 <h2 id="shell-scripting-tutorial-38-another-date-with-case-statement"><strong>Shell Scripting Tutorial-38:</strong> <em>Another Date with ‘case’ Statement</em></h2>
 
 <p>Another example of case statement. <br>
 <strong>Example:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs bash"><span class="hljs-shebang">#!/usr/bin/env bash
 </span>
@@ -2383,6 +2533,8 @@ You entered <span class="hljs-operator">a</span> digit.</code></pre>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs livecodeserver">Enter <span class="hljs-operator">a</span> <span class="hljs-built_in">word</span>:mustafa
 Something <span class="hljs-keyword">else</span>.
 
@@ -2399,11 +2551,15 @@ Enter <span class="hljs-operator">a</span> <span class="hljs-built_in">word</spa
 The <span class="hljs-keyword">words</span> <span class="hljs-operator">ends</span> <span class="hljs-operator">with</span> <span class="hljs-operator">a</span> digit.
 </code></pre>
 
+
+
 <h2 id="shell-scripting-tutorial-39-the-while-loop"><strong>Shell Scripting Tutorial-39:</strong> <em>The ‘while’ Loop</em></h2>
 
 <p>usage of ‘while’ loop. <br>
 display the number 1 to 10. <br>
 <strong>Example:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs bash"><span class="hljs-shebang">#!/usr/bin/env bash</span>
 <span class="hljs-comment"># while loop in action</span>
@@ -2418,6 +2574,8 @@ count=<span class="hljs-number">1</span>
 <span class="hljs-keyword">done</span></code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs ">1
 2
@@ -2457,11 +2615,15 @@ count=<span class="hljs-number">1</span>
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-40-the-until-loop"><strong>Shell Scripting Tutorial-40:</strong> <em>The ‘until’ Loop</em></h2>
 
 <p>usage of until loop. <br>
 display the numbers 1 to 9. <br>
 <strong>Example:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs bash"><span class="hljs-shebang">#!/usr/bin/env bash</span>
 <span class="hljs-comment"># until loop in action</span>
@@ -2477,6 +2639,8 @@ until [ <span class="hljs-variable">$count</span> -ge <span class="hljs-number">
 </code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs ">1
 2
@@ -2514,6 +2678,8 @@ until [ <span class="hljs-variable">$count</span> -ge <span class="hljs-number">
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-41-the-for-loop"><strong>Shell Scripting Tutorial-41:</strong> <em>The ‘for’ Loop</em></h2>
 
 <p>usage of for loop. <br>
@@ -2546,6 +2712,8 @@ for loop is pretty different than until and while loop. <br>
 <span class="hljs-keyword">done</span></code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs avrasm"><span class="hljs-label">directories:</span> 
 folder1
@@ -2588,12 +2756,16 @@ empty_file3
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-42-rant-little-work"><strong>Shell Scripting Tutorial-42:</strong> <em>Rant &amp; Little Work</em></h2>
 
 <p>comparison of real number.  </p>
 
 <p>another comparison for floating point numbers. <br>
 <strong>Example:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs bash"><span class="hljs-shebang">#!/usr/bin/env bash</span>
 <span class="hljs-comment"># 1. comparison of the real numbers</span>
@@ -2640,6 +2812,8 @@ val=<span class="hljs-number">10.35</span>
 <span class="hljs-built_in">echo</span> <span class="hljs-string">"<span class="hljs-variable">$min</span>"</span></code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs oxygene">following <span class="hljs-function"><span class="hljs-keyword">method</span> <span class="hljs-title">is</span> <span class="hljs-title">for</span> <span class="hljs-title">integers</span> <span class="hljs-title">and</span> <span class="hljs-title">not</span> <span class="hljs-title">working</span> <span class="hljs-title">for</span> <span class="hljs-title">real</span> <span class="hljs-title">numbers</span>:</span> 
 a=<span class="hljs-number">4.5</span>
@@ -2692,7 +2866,7 @@ echo min
   <td></td>
 </tr>
 <tr>
-  <td>`if [ 1 -eq “<script type="math/tex" id="MathJax-Element-29">(echo “</script>{val} &lt; ${min}”</td>
+  <td>`if [ 1 -eq “<script type="math/tex" id="MathJax-Element-3">(echo “</script>{val} &lt; ${min}”</td>
   <td>bc)” ]`</td>
 </tr>
 <tr>
@@ -2712,6 +2886,8 @@ echo min
   <td></td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-43-search-patterns-using-grep"><strong>Shell Scripting Tutorial-43:</strong> <em>Search Patterns Using ‘grep’</em></h2>
@@ -2749,6 +2925,8 @@ grep -i -n -c money text_tutorial_43
 grep -i -n -c -v money text_tutorial_43</code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs applescript">Search money <span class="hljs-keyword">in</span> <span class="hljs-keyword">the</span> <span class="hljs-type">file</span> <span class="hljs-keyword">with</span> case sensitivity:
 
@@ -2804,6 +2982,8 @@ Search money <span class="hljs-keyword">in</span> <span class="hljs-keyword">the
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-44-the-passwd-file-explained"><strong>Shell Scripting Tutorial-44:</strong> <em>The ‘passwd’ File Explained</em></h2>
 
 <p>Usage of file “passwd”.  </p>
@@ -2820,6 +3000,8 @@ field 6 -&gt; <strong>/home/joker</strong>: home folder <br>
 field 7 -&gt; <strong>/bin/bash</strong>: shell  <br>
 <strong>Example:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs asciidoc">#!/usr/bin/env bash
 
 cat /etc/passwd
@@ -2833,6 +3015,8 @@ field 6 -&gt; *</span><span class="hljs-strong">*/home/joker*</span><span class=
 field 7 -&gt; *</span><span class="hljs-strong">*/bin/bash*</span><span class="hljs-strong">*: shell "</span></code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs ruby"><span class="hljs-symbol">root:</span><span class="hljs-symbol">x:</span><span class="hljs-number">0</span><span class="hljs-symbol">:</span><span class="hljs-number">0</span><span class="hljs-symbol">:root</span><span class="hljs-symbol">:/root</span><span class="hljs-symbol">:/bin/bash</span>
 <span class="hljs-symbol">daemon:</span><span class="hljs-symbol">x:</span><span class="hljs-number">1</span><span class="hljs-symbol">:</span><span class="hljs-number">1</span><span class="hljs-symbol">:daemon</span><span class="hljs-symbol">:/usr/sbin</span><span class="hljs-symbol">:/usr/sbin/nologin</span>
@@ -2924,6 +3108,8 @@ field <span class="hljs-number">7</span> -&gt; **<span class="hljs-regexp">/bin/
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-45-the-internal-field-separator"><strong>Shell Scripting Tutorial-45:</strong> <em>The Internal Field Separator</em></h2>
 
 <p>Usage of IFS (internal field separator)   </p>
@@ -2966,6 +3152,8 @@ line=<span class="hljs-string">"Shell:scripting:is:fun."</span>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs oxygene"><span class="hljs-keyword">default</span> IFS usage:
 Shell
 scripting
@@ -2999,10 +3187,14 @@ fun.
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-46-passwd-file-revisited"><strong>Shell Scripting Tutorial-46:</strong> <em>‘passwd’ File Revisited</em></h2>
 
 <p>Example of using passwd file, IFS, grep and set command. <br>
 <strong>Example:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs bash"><span class="hljs-shebang">#!/usr/bin/env bash</span>
 <span class="hljs-comment"># 1. shows some information from passwd file to users.</span>
@@ -3026,6 +3218,8 @@ IFS=: <span class="hljs-comment"># the separator is : in passwd file</span>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs autohotkey"><span class="hljs-label">Enter Username:</span>joker
 <span class="hljs-label">Username:</span>joker
 <span class="hljs-label">User ID:</span> <span class="hljs-number">1000</span>
@@ -3033,6 +3227,8 @@ IFS=: <span class="hljs-comment"># the separator is : in passwd file</span>
 <span class="hljs-label">Comment Field:</span> joker,,,
 <span class="hljs-label">Home Folder:</span> /home/joker
 <span class="hljs-label">Default shell:</span> /bin/bash</code></pre>
+
+
 
 <h2 id="shell-scripting-tutorial-47-reading-from-a-file"><strong>Shell Scripting Tutorial-47:</strong> <em>Reading From a File</em></h2>
 
@@ -3081,6 +3277,8 @@ count=<span class="hljs-number">1</span>
 <span class="hljs-keyword">exec</span> &lt; <span class="hljs-variable">$terminal</span></code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs applescript">Enter a <span class="hljs-type">file</span> <span class="hljs-property">name</span>(text_tutorial_47):text_tutorial_47
 <span class="hljs-keyword">exit</span>
@@ -3132,6 +3330,8 @@ tty <span class="hljs-keyword">contains</span> info <span class="hljs-keyword">a
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-48-sleep-while-you-are-at-work"><strong>Shell Scripting Tutorial-48:</strong> <em>Sleep While You are at Work</em></h2>
 
 <p>Usage of <strong>sleep</strong> command. Sleep makes a time delay on the execution of shell. <br>
@@ -3153,6 +3353,8 @@ tty <span class="hljs-keyword">contains</span> info <span class="hljs-keyword">a
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs applescript">Enter a sentence:shell <span class="hljs-keyword">script</span> tutorial <span class="hljs-keyword">is</span> cool :)
 shell
 <span class="hljs-keyword">script</span>
@@ -3173,6 +3375,8 @@ cool
   <td>shell execution sleeps 5 seconds</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-49-count-the-number-of-words-sentences-in-a-text-file-without-using-wc"><strong>Shell Scripting Tutorial-49:</strong> <em>Count the number of words &amp; sentences in a text file without using ‘wc’</em></h2>
@@ -3221,14 +3425,20 @@ now=<span class="hljs-number">0</span> <span class="hljs-comment"># number of wo
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs livecodeserver">Enter <span class="hljs-operator">a</span> <span class="hljs-built_in">file</span> name(text_tutorial_49):text_tutorial_49
 <span class="hljs-built_in">number</span> <span class="hljs-operator">of</span> <span class="hljs-keyword">lines</span>: <span class="hljs-number">3</span>
 <span class="hljs-built_in">number</span> <span class="hljs-operator">of</span> <span class="hljs-keyword">words</span>: <span class="hljs-number">17</span>
 </code></pre>
 
+
+
 <h2 id="shell-scripting-tutorial-50-fetch-redirect-man-pages-of-commands-using-for-loop"><strong>Shell Scripting Tutorial-50:</strong> <em>Fetch &amp; Redirect Man Pages of commands using ‘for loop’</em></h2>
 
 <p><strong>Example:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs bash"><span class="hljs-shebang">#!/usr/bin/env bash</span>
 <span class="hljs-comment"># 1. use the command in the commandlist_tutorial_50</span>
@@ -3248,6 +3458,8 @@ now=<span class="hljs-number">0</span> <span class="hljs-comment"># number of wo
 <span class="hljs-keyword">done</span></code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs oxygene"># <span class="hljs-keyword">take</span> a look <span class="hljs-keyword">to</span> content <span class="hljs-keyword">of</span> helpfile</code></pre>
 
@@ -3269,10 +3481,14 @@ now=<span class="hljs-number">0</span> <span class="hljs-comment"># number of wo
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-51-nested-loops"><strong>Shell Scripting Tutorial-51:</strong> <em>Nested Loops</em></h2>
 
 <p>Example for nested loop. <br>
 <strong>Example:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs bash"><span class="hljs-shebang">#!/usr/bin/env bash</span>
 <span class="hljs-comment"># 1. display all combination of  number 1 2 3</span>
@@ -3296,6 +3512,8 @@ a=<span class="hljs-number">1</span>
 </code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs ">111
 112
@@ -3325,6 +3543,8 @@ a=<span class="hljs-number">1</span>
 332
 333</code></pre>
 
+
+
 <h2 id="shell-scripting-tutorial-52-the-break-statement"><strong>Shell Scripting Tutorial-52:</strong> <em>The ‘break’ Statement</em></h2>
 
 <p>break terminates the loop. <br>
@@ -3350,6 +3570,8 @@ count=<span class="hljs-number">1</span>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs vhdl"><span class="hljs-number">1</span>
 <span class="hljs-number">2</span>
 <span class="hljs-number">3</span>
@@ -3370,6 +3592,8 @@ We are <span class="hljs-keyword">out</span> <span class="hljs-keyword">of</span
   <td>ends the loop iteration</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-53-the-continue-statement"><strong>Shell Scripting Tutorial-53:</strong> <em>The ‘continue’ Statement</em></h2>
@@ -3397,6 +3621,8 @@ count=<span class="hljs-number">0</span>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs vbnet"><span class="hljs-number">1</span>
 <span class="hljs-number">2</span>
 <span class="hljs-number">3</span>
@@ -3422,6 +3648,8 @@ count=<span class="hljs-number">0</span>
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-54-more-on-metacharacters"><strong>Shell Scripting Tutorial-54:</strong> <em>More on Metacharacters</em></h2>
 
 <p>Running more than one command a line. <br>
@@ -3442,6 +3670,8 @@ grep -i money text_tutorial_54 &gt; pattern &amp;&amp; <span class="hljs-built_i
 cat pattern</code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs applescript">animals              script_2_tutorial_61  video_tutorial_10.sh  video_tutorial_29.sh  video_tutorial_48.sh
 commandlist_tutorial_50      script_3_tutorial_61  video_tutorial_11.sh  video_tutorial_30.sh  video_tutorial_49.sh
@@ -3505,6 +3735,8 @@ Money, so they <span class="hljs-command">say</span>
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-55-adding-removing-users"><strong>Shell Scripting Tutorial-55:</strong> <em>Adding &amp; Removing Users</em></h2>
 
 <p>by using GUI user can be added and deleted.  </p>
@@ -3523,10 +3755,14 @@ Money, so they <span class="hljs-command">say</span>
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-56-know-when-users-log-in-part-one"><strong>Shell Scripting Tutorial-56:</strong> <em>Know when users log in Part One</em></h2>
 
 <p>Login example. <br>
 <strong>Example:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs bash"><span class="hljs-shebang">#!/usr/bin/env bash</span>
 <span class="hljs-comment"># 1. checks every minute the user login or not</span>
@@ -3555,9 +3791,13 @@ time=<span class="hljs-number">0</span>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs oxygene">Enter username:joker
 joker <span class="hljs-keyword">has</span> logged <span class="hljs-keyword">in</span>.
 </code></pre>
+
+
 
 <h2 id="shell-scripting-tutorial-57-know-when-users-log-in-part-two"><strong>Shell Scripting Tutorial-57:</strong> <em>Know when users log in Part Two</em></h2>
 
@@ -3601,6 +3841,8 @@ time=<span class="hljs-number">0</span>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs vhdl">Enter username:joker
 <span class="hljs-keyword">Wait</span>...
 joker has logged <span class="hljs-keyword">in</span>.
@@ -3622,6 +3864,8 @@ joker has logged <span class="hljs-keyword">in</span>.
   <td></td>
 </tr>
 </tbody></table>
+
+
 
 
 <h2 id="shell-scripting-tutorial-58-know-when-users-log-in-final-part"><strong>Shell Scripting Tutorial-58:</strong> <em>Know when users log in Final Part</em></h2>
@@ -3676,10 +3920,14 @@ time=<span class="hljs-number">0</span>
 
 <p><strong>Output:</strong></p>
 
+
+
 <pre class="prettyprint"><code class=" hljs vhdl">Enter username:joker
 <span class="hljs-keyword">Wait</span>...
 joker has logged <span class="hljs-keyword">in</span>.
 </code></pre>
+
+
 
 <h2 id="shell-scripting-tutorial-59-communicate-with-other-users-using-write"><strong>Shell Scripting Tutorial-59:</strong> <em>Communicate with other users using ‘write’</em></h2>
 
@@ -3729,6 +3977,8 @@ finger</code></pre>
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-60-create-your-own-commands-using-functions"><strong>Shell Scripting Tutorial-60:</strong> <em>Create Your Own Commands Using Functions</em></h2>
 
 <p>following is the function usage. <br>
@@ -3737,6 +3987,8 @@ run the following command to initialize the function:  </p>
 <p>use following command to release the function: <br>
 <code>$ unset youtube</code> <br>
 <strong>Example:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs bash"><span class="hljs-shebang">#!/usr/bin/env bash</span>
 <span class="hljs-comment"># run the following command before the script:</span>
@@ -3772,6 +4024,8 @@ run the following command to initialize the function:  </p>
 </tbody></table>
 
 
+
+
 <h2 id="shell-scripting-tutorial-61-executing-multiple-scripts"><strong>Shell Scripting Tutorial-61:</strong> <em>Executing Multiple Scripts</em></h2>
 
 <p>Script should run at the last line of the previous script.  <br>
@@ -3786,6 +4040,8 @@ run the following command to initialize the function:  </p>
 sh script_1_tutorial_61</code></pre>
 
 <p><strong>Output:</strong></p>
+
+
 
 <pre class="prettyprint"><code class=" hljs ruleslanguage">                                                           #
   ###<span class="hljs-array">#    </span>###<span class="hljs-array">#   </span>####<span class="hljs-array">#      </span><span class="hljs-array">#    </span>####<span class="hljs-array">#    </span>####<span class="hljs-array">#           </span>##
